@@ -29,6 +29,10 @@ var app = {
     onDeviceReady: function() {
         $("#second").hide();
          $("#third").hide();
+        $("#fourth").hide();
+        $("#fifth").hide();
+        $("#sixty").hide();
+        $("#sventh").hide();
         this.receivedEvent('deviceready');
     },
 
