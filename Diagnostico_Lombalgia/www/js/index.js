@@ -137,6 +137,7 @@ var app = {
         $("#six1").click(function(){
                $("#sixty").hide(); 
             localStorage.quintaEscolha = 1;
+               teste();
             $("#seventh").show();
         });
         
@@ -144,11 +145,25 @@ var app = {
         $("#six2").click(function(){
                $("#sixty").hide();  
             localStorage.quintaEscolha = 2;
+             teste();
             $("#seventh").show();
         });
         
-        
-        
+        //Função para determinar o final
+        function teste(){
+            //Caso seja o botão 1 no inicio
+            if (localStorage.getItem('primeiraEscolha') == 1){
+                if (localStorage.getItem('segundaEscolha') == 1){
+                     if (localStorage.getItem('terceiraEscolha') == 1){
+                          if (localStorage.getItem('quartaEscolha') == 2){
+                               if (localStorage.getItem('quintaEscolha') == 2){
+                                  $("resultado").html("Desfecho 1"); 
+                            }
+                          }
+                     }
+                }
+            }
+        };
         
         console.log('Received Event: ' + id);
     }
