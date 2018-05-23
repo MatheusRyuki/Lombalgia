@@ -215,7 +215,10 @@ var app = {
                      if (localStorage.getItem('terceiraEscolha') == 1){
                           if (localStorage.getItem('quartaEscolha') == 2){
                                if (localStorage.getItem('quintaEscolha') == 2){
-                                    $("#resultado").html("Desfecho 9"); 
+                                    $("#resultado").html("Desfecho 9");
+                                   //Desfecho 12
+                               } else if (localStorage.getItem('quintaEscolha') == 1){
+                                    $("#resultado").html("Desfecho 12"); 
                                }
                           }
                      }
@@ -225,10 +228,54 @@ var app = {
                           if (localStorage.getItem('quartaEscolha') == 2){
                                if (localStorage.getItem('quintaEscolha') == 2){
                                     $("#resultado").html("Desfecho 10"); 
+                                   //Desfecho 13
+                               } else if (localStorage.getItem('quintaEscolha') == 1){
+                                    $("#resultado").html("Desfecho 13"); 
+                               } 
+                          }
+                     }
+                 //Desfecho 11
+             } else if (localStorage.getItem('segundaEscolha') == 3){
+                     if (localStorage.getItem('terceiraEscolha') == 3){
+                          if (localStorage.getItem('quartaEscolha') == 1){
+                               if (localStorage.getItem('quintaEscolha') == 2){
+                                    $("#resultado").html("Desfecho 11"); 
+                               //Desfecho 14
+                               } else if (localStorage.getItem('quintaEscolha') == 1){
+                                    $("#resultado").html("Desfecho 14"); 
                                }
                           }
                      }
              }
+            //Desfecho 15
+        } if (localStorage.getItem('primeiraEscolha') == 3){
+                if (localStorage.getItem('segundaEscolha') == 1){
+                     if (localStorage.getItem('terceiraEscolha') == 1){
+                          if (localStorage.getItem('quartaEscolha') == 2){
+                               if (localStorage.getItem('quintaEscolha') == 2){
+                                  $("#resultado").html("Desfecho 15");
+                               }
+                          }
+                     }
+                    //Desfecho 16
+                } else if (localStorage.getItem('segundaEscolha') == 2){
+                     if (localStorage.getItem('terceiraEscolha') == 2){
+                          if (localStorage.getItem('quartaEscolha') == 1){
+                               if (localStorage.getItem('quintaEscolha') == 2){
+                                  $("#resultado").html("Desfecho 16");
+                               }
+                          }
+                     }
+                    //Desfecho 17
+                } else if (localStorage.getItem('segundaEscolha') == 3){
+                     if (localStorage.getItem('terceiraEscolha') == 3){
+                          if (localStorage.getItem('quartaEscolha') == 1){
+                               if (localStorage.getItem('quintaEscolha') == 1){
+                                  $("#resultado").html("Desfecho 17");
+                               }
+                          }
+                     }
+                }
         }
     };
         console.log('Received Event: ' + id);
