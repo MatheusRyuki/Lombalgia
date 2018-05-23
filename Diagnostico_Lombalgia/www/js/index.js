@@ -133,6 +133,20 @@ var app = {
             $("#sixty").show();
         });
         
+           //Sexto Clique - Opções 1
+        $("#six1").click(function(){
+               $("#sixty").hide(); 
+            localStorage.quintaEscolha = 1;
+            $("#seventh").show();
+        });
+        
+           //Sexto Clique - Opções 2
+        $("#six2").click(function(){
+               $("#sixty").hide();  
+            localStorage.quintaEscolha = 2;
+            $("#seventh").show();
+        });
+        
         
         
         
