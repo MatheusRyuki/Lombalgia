@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed May 23 18:22:12 GFT 2018
+#Wed May 23 20:01:38 GFT 2018
 25.file=C\:\\Users\\dr_4_\\Downloads\\download\\Projeto-Lombalgia\\Diagnostico_Lombalgia\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_\\res\\drawable-land-xhdpi-v4\\screen.png
 25.base=C\:\\Users\\dr_4_\\Downloads\\download\\Projeto-Lombalgia\\Diagnostico_Lombalgia\\platforms\\android\\app\\build\\intermediates\\res\\debug\\resources-debug.ap_
 22.set=ANDROID_RESOURCE
