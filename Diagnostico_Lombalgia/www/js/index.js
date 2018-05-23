@@ -91,7 +91,7 @@ var app = {
         });
         
              //Quarto Clique - Opções 1
-        $("fou1").click(function(){
+        $("#fou1").click(function(){
                $("#fourth").hide(); 
             localStorage.terceiraEscolha = 1;
             $("#fifth").show();
@@ -117,6 +117,22 @@ var app = {
             localStorage.terceiraEscolha = 4;
             $("#fifth").show();
         });
+        
+            
+             //Quinto Clique - Opções 1
+        $("#fif1").click(function(){
+               $("#fifth").hide(); 
+            localStorage.quartaEscolha = 1;
+            $("#sixty").show();
+        });
+        
+           //Quinto Clique - Opções 2
+        $("#fif2").click(function(){
+               $("#fifth").hide();  
+            localStorage.quartaEscolha = 2;
+            $("#sixty").show();
+        });
+        
         
         
         
