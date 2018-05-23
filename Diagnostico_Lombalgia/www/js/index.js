@@ -27,13 +27,42 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
+        $("#second").hide();
+         $("#third").hide();
         this.receivedEvent('deviceready');
     },
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-       
-
+     
+        //Primeiro Clique
+        $("#pri").click(function(){
+          $("#first").hide(); 
+           $("#second").show();  
+       });
+        
+        //Segundo Clique - Opções 1
+        $("#sec1").click(function(){
+               $("#second").hide();  
+            localStorage.primeiraEscolha = 1;
+            $("#third").show();
+        });
+        
+           //Segundo Clique - Opções 2
+        $("#sec2").click(function(){
+               $("#second").hide();  
+            localStorage.primeiraEscolha = 2;
+            $("#third").show();
+        });
+        
+           //Segundo Clique - Opções 3
+        $("#sec3").click(function(){
+               $("#second").hide();  
+            localStorage.primeiraEscolha = 3;
+            $("#third").show();
+        });
+        
+        
         console.log('Received Event: ' + id);
     }
 };
