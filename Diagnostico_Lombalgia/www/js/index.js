@@ -155,7 +155,7 @@ var app = {
         
         //Função para determinar o final
         function teste(){
-            //Caso seja o botão 1 no inicio
+            //Desfecho 1
             if (localStorage.getItem('primeiraEscolha') == 1){
                 if (localStorage.getItem('segundaEscolha') == 1){
                      if (localStorage.getItem('terceiraEscolha') == 1){
@@ -165,6 +165,14 @@ var app = {
                             }
                           }
                      }
+                    //Desfecho 2
+                } else if (localStorage.getItem('segundaEscolha') == 2) {
+                      if (localStorage.getItem('terceiraEscolha') == 2){
+                          if (localStorage.getItem('quartaEscolha') == 2){
+                               if (localStorage.getItem('quintaEscolha') == 2){
+                                  $("#resultado").html("Desfecho 2"); 
+                            }
+                    
                 }
             }
         };

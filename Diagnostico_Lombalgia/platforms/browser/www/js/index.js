@@ -161,7 +161,7 @@ var app = {
                      if (localStorage.getItem('terceiraEscolha') == 1){
                           if (localStorage.getItem('quartaEscolha') == 2){
                                if (localStorage.getItem('quintaEscolha') == 2){
-                                  $("#resultado").val("Desfecho 1"); 
+                                  $("#resultado").html("Desfecho 1"); 
                             }
                           }
                      }
