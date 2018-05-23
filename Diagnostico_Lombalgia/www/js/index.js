@@ -175,7 +175,7 @@ var app = {
                                if (localStorage.getItem('quintaEscolha') == 2){
                                   $("#resultado").html("Desfecho 2");
                                    //Desfecho 6
-                            } else if (localStorage.getItem('quintaEscolha') == 2){
+                            } else if (localStorage.getItem('quintaEscolha') == 1){
                                   $("#resultado").html("Desfecho 6");
                     
                             }
@@ -278,6 +278,14 @@ var app = {
                 }
         }
     };
+        
+        //Voltar ao ínicio
+        $("#inicio").click(function(){
+               localStorage.clear();
+              $("#seventh").hide();
+               $("#first").show(); 
+        });
+     
         console.log('Received Event: ' + id);
     }
 };

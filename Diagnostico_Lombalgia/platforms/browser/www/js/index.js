@@ -155,20 +155,137 @@ var app = {
         
         //Função para determinar o final
         function teste(){
-            //Caso seja o botão 1 no inicio
+            //Desfecho 1
             if (localStorage.getItem('primeiraEscolha') == 1){
                 if (localStorage.getItem('segundaEscolha') == 1){
                      if (localStorage.getItem('terceiraEscolha') == 1){
                           if (localStorage.getItem('quartaEscolha') == 2){
                                if (localStorage.getItem('quintaEscolha') == 2){
                                   $("#resultado").html("Desfecho 1"); 
+                        //Desfecho 5
+                            } else if (localStorage.getItem('quintaEscolha') == 1){
+                                   $("#resultado").html("Desfecho 5"); 
                             }
                           }
                      }
-                }
+                    //Desfecho 2
+                } else if (localStorage.getItem('segundaEscolha') == 2) {
+                      if (localStorage.getItem('terceiraEscolha') == 2){
+                          if (localStorage.getItem('quartaEscolha') == 2){
+                               if (localStorage.getItem('quintaEscolha') == 2){
+                                  $("#resultado").html("Desfecho 2");
+                                   //Desfecho 6
+                            } else if (localStorage.getItem('quintaEscolha') == 2){
+                                  $("#resultado").html("Desfecho 6");
+                    
+                            }
+                          }
+                        }
+        //Desfecho 3            
+        }else if (localStorage.getItem('segundaEscolha') == 3){
+                      if (localStorage.getItem('terceiraEscolha') == 3){
+                          if (localStorage.getItem('quartaEscolha') == 2){
+                               if (localStorage.getItem('quintaEscolha') == 2){
+                                  $("#resultado").html("Desfecho 3"); 
+                                   //Desfecho 7
+                            } else if (localStorage.getItem('quintaEscolha') == 1){
+                                  $("#resultado").html("Desfecho 7"); 
+                            }
+                    
+                            }
+                        }
+              
+            // Desfecho 4
+            } else if (localStorage.getItem('segundaEscolha') == 4){
+                      if (localStorage.getItem('terceiraEscolha') == 4){
+                          if (localStorage.getItem('quartaEscolha') == 1){
+                               if (localStorage.getItem('quintaEscolha') == 2){
+                                  $("#resultado").html("Desfecho 4"); 
+                                   //Desfecho 8
+                            } else if (localStorage.getItem('quintaEscolha') == 1){
+                                  $("#resultado").html("Desfecho 8"); 
+                            }
+                    
+                        }
+                    }
             }
-        };
+                //Desfecho 9
+        }  if (localStorage.getItem('primeiraEscolha') == 2){
+             if (localStorage.getItem('segundaEscolha') == 1){
+                     if (localStorage.getItem('terceiraEscolha') == 1){
+                          if (localStorage.getItem('quartaEscolha') == 2){
+                               if (localStorage.getItem('quintaEscolha') == 2){
+                                    $("#resultado").html("Desfecho 9");
+                                   //Desfecho 12
+                               } else if (localStorage.getItem('quintaEscolha') == 1){
+                                    $("#resultado").html("Desfecho 12"); 
+                               }
+                          }
+                     }
+                 //Desfecho 10
+             } else if (localStorage.getItem('segundaEscolha') == 2){
+                     if (localStorage.getItem('terceiraEscolha') == 2){
+                          if (localStorage.getItem('quartaEscolha') == 2){
+                               if (localStorage.getItem('quintaEscolha') == 2){
+                                    $("#resultado").html("Desfecho 10"); 
+                                   //Desfecho 13
+                               } else if (localStorage.getItem('quintaEscolha') == 1){
+                                    $("#resultado").html("Desfecho 13"); 
+                               } 
+                          }
+                     }
+                 //Desfecho 11
+             } else if (localStorage.getItem('segundaEscolha') == 3){
+                     if (localStorage.getItem('terceiraEscolha') == 3){
+                          if (localStorage.getItem('quartaEscolha') == 1){
+                               if (localStorage.getItem('quintaEscolha') == 2){
+                                    $("#resultado").html("Desfecho 11"); 
+                               //Desfecho 14
+                               } else if (localStorage.getItem('quintaEscolha') == 1){
+                                    $("#resultado").html("Desfecho 14"); 
+                               }
+                          }
+                     }
+             }
+            //Desfecho 15
+        } if (localStorage.getItem('primeiraEscolha') == 3){
+                if (localStorage.getItem('segundaEscolha') == 1){
+                     if (localStorage.getItem('terceiraEscolha') == 1){
+                          if (localStorage.getItem('quartaEscolha') == 2){
+                               if (localStorage.getItem('quintaEscolha') == 2){
+                                  $("#resultado").html("Desfecho 15");
+                               }
+                          }
+                     }
+                    //Desfecho 16
+                } else if (localStorage.getItem('segundaEscolha') == 2){
+                     if (localStorage.getItem('terceiraEscolha') == 2){
+                          if (localStorage.getItem('quartaEscolha') == 1){
+                               if (localStorage.getItem('quintaEscolha') == 2){
+                                  $("#resultado").html("Desfecho 16");
+                               }
+                          }
+                     }
+                    //Desfecho 17
+                } else if (localStorage.getItem('segundaEscolha') == 3){
+                     if (localStorage.getItem('terceiraEscolha') == 3){
+                          if (localStorage.getItem('quartaEscolha') == 1){
+                               if (localStorage.getItem('quintaEscolha') == 1){
+                                  $("#resultado").html("Desfecho 17");
+                               }
+                          }
+                     }
+                }
+        }
+    };
         
+        //Voltar ao ínicio
+        $("#inicio").click(function(){
+               localStorage.clear();
+              $("#seventh").hide();
+               $("#first").show(); 
+        });
+     
         console.log('Received Event: ' + id);
     }
 };
