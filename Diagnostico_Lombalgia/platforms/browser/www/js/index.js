@@ -29,6 +29,10 @@ var app = {
     onDeviceReady: function() {
         $("#second").hide();
          $("#third").hide();
+        $("#fourth").hide();
+        $("#fifth").hide();
+        $("#sixty").hide();
+        $("#seventh").hide();
         this.receivedEvent('deviceready');
     },
 
@@ -157,7 +161,7 @@ var app = {
                      if (localStorage.getItem('terceiraEscolha') == 1){
                           if (localStorage.getItem('quartaEscolha') == 2){
                                if (localStorage.getItem('quintaEscolha') == 2){
-                                  $("resultado").html("Desfecho 1"); 
+                                  $("#resultado").val("Desfecho 1"); 
                             }
                           }
                      }
