@@ -27,6 +27,7 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
+         $("#tela").hide();
         $("#second").hide();
          $("#third").hide();
         $("#fourth").hide();
@@ -38,7 +39,16 @@ var app = {
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-     
+        
+        
+        //Apresentação Clique
+           $("#pri").click(function(){
+          $("#first").hide(); 
+           $("#tela").show();  
+       });
+        
+        
+        
         //Primeiro Clique
         $("#pri").click(function(){
           $("#first").hide(); 
