@@ -55,7 +55,8 @@ var app = {
         
         //Escolha da Apresentação -certa
         $("#telafin").click(function(){
-          $("#tela").hide(); 
+          $("#tela").hide();
+            $('#introducao').modal('show');  
            $("#second").show();  
        });
         
