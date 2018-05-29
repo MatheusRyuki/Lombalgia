@@ -53,14 +53,22 @@ var app = {
         
         
         
-        //Primeiro Clique
-        $("#sec1").click(function(){
+        //Escolha da Apresentação -certa
+        $("#telafin").click(function(){
           $("#tela").hide(); 
            $("#second").show();  
        });
         
+        //Escolha errada
+         $("#urgencia").click(function(){
+        $('.ui.basic.modal')
+  .modal('show')
+;  
+       });
+        
+        
         //Segundo Clique - Opções 1
-        $("#sec2").click(function(){
+        $("#sec1").click(function(){
                $("#second").hide();  
             localStorage.primeiraEscolha = 1;
             $("#third").show();

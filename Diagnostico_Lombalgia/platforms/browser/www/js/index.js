@@ -53,11 +53,19 @@ var app = {
         
         
         
-        //Primeiro Clique
-        $("#pri").click(function(){
-          $("#first").hide(); 
+        //Escolha da Apresentação -certa
+        $("#telafin").click(function(){
+          $("#tela").hide(); 
            $("#second").show();  
        });
+        
+        //Escolha errada
+         $("#urgencia").click(function(){
+        $('.ui.basic.modal')
+  .modal('show')
+;  
+       });
+        
         
         //Segundo Clique - Opções 1
         $("#sec1").click(function(){
