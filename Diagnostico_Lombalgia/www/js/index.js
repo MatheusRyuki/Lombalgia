@@ -44,19 +44,23 @@ var app = {
         //Apresentação Clique
            $("#pri").click(function(){
           $("#first").hide(); 
-           $("#tela").show();  
+               $(document.body).css({"background": "url(img/lombalgia.jpg) no-repeat center center fixed",
+                "background-size": "cover", 
+                 "height": "100%"
+                });
+            $("#tela").show();  
        });
         
         
         
         //Primeiro Clique
-        $("#pri").click(function(){
-          $("#first").hide(); 
+        $("#sec1").click(function(){
+          $("#tela").hide(); 
            $("#second").show();  
        });
         
         //Segundo Clique - Opções 1
-        $("#sec1").click(function(){
+        $("#sec2").click(function(){
                $("#second").hide();  
             localStorage.primeiraEscolha = 1;
             $("#third").show();
