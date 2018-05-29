@@ -55,14 +55,14 @@ var app = {
         
         //Escolha da Apresentação -certa
         $("#telafin").click(function(){
-          $("#tela").hide(); 
+          $("#tela").hide();
+            $('#introducao').modal('show');  
            $("#second").show();  
        });
         
         //Escolha errada
          $("#urgencia").click(function(){
-        $('.ui.basic.modal')
-  .modal('show')
+        $('#alerta').modal('show')
 ;  
        });
         

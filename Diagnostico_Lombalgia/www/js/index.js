@@ -62,8 +62,7 @@ var app = {
         
         //Escolha errada
          $("#urgencia").click(function(){
-        $('.ui.basic.modal')
-  .modal('show')
+        $('#alerta').modal('show')
 ;  
        });
         

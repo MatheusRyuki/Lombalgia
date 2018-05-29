@@ -51,18 +51,10 @@
             <h3 class="ui top attached center aligned header">
   Duração da Dor Lombar
             </h3>
-            <div id="sec1" class="ui top attached button" style="margin-top: 15%;">Botão 1</div>
-                <div class="ui attached segment">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue.</p>
-                </div>
-            <div id="sec2" class="ui top attached button"  style="margin-top: 15%;">Botão 2</div>
-                <div class="ui attached segment">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id.</p>
-                </div>
-                <div id="sec3" class="ui top attached button"  style="margin-top: 15%;">Botão 3</div>
-                <div class="ui attached segment">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis.</p>
-                </div>
+            <div id="sec1" class="ui top attached button" style="margin-top: 10%;">Dor Lombar com tempo inferior a um mês de duração.</div>
+            <div id="sec2" class="ui top attached button"  style="margin-top: 10%;">Dor Lombar com tempo superior a um mês e inferior a três meses de duração.</div>
+                <div id="sec3" class="ui top attached button"  style="margin-top: 10%;">Dor Lombar com tempo superior a três meses de duração.</div>
+             
         
         </div>   
             
@@ -163,12 +155,27 @@
             </div>
       
             <!--Alerta-->
-            <div class="ui basic modal">
+            <div class="ui basic modal" id="alerta">
     <div class="header">
     Alerta
   </div>
   <div class="content">
     <p>O problema que você citou não poderá ser ajudado pelo aplicativo, procure um clínico geral. </p>
+  </div>
+  <div class="actions">
+    <div class="ui green ok inverted button">
+      Ok
+    </div>
+  </div>
+</div>
+            
+            <!--Acerto-->
+               <div class="ui basic modal" id="introducao">
+    <div class="header">
+    Como usar
+  </div>
+  <div class="content">
+    <p>Clique nas opções que respondam corretamente as perguntas. </p>
   </div>
   <div class="actions">
     <div class="ui green ok inverted button">
