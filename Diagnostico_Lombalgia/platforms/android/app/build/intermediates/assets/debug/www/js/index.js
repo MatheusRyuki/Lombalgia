@@ -27,6 +27,7 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
+         $("#tela").hide();
         $("#second").hide();
          $("#third").hide();
         $("#fourth").hide();
@@ -38,12 +39,33 @@ var app = {
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-     
-        //Primeiro Clique
-        $("#pri").click(function(){
+        
+        
+        //Apresentação Clique
+           $("#pri").click(function(){
           $("#first").hide(); 
+               $(document.body).css({"background": "url(img/lombalgia.jpg) no-repeat center center fixed",
+                "background-size": "cover", 
+                 "height": "100%"
+                });
+            $("#tela").show();  
+       });
+        
+        
+        
+        //Escolha da Apresentação -certa
+        $("#telafin").click(function(){
+          $("#tela").hide();
+            $('#introducao').modal('show');  
            $("#second").show();  
        });
+        
+        //Escolha errada
+         $("#urgencia").click(function(){
+        $('#alerta').modal('show')
+;  
+       });
+        
         
         //Segundo Clique - Opções 1
         $("#sec1").click(function(){
