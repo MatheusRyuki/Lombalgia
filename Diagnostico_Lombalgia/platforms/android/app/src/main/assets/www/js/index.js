@@ -183,6 +183,7 @@ var app = {
                           if (localStorage.getItem('quartaEscolha') == 2){
                                if (localStorage.getItem('quintaEscolha') == 2){
                                   $("#resultado").html("Desfecho 1"); 
+                                   $("#diagnostico").html("Lombalgia aguda com diminuição da mobilidade");
                         //Desfecho 5
                             } else if (localStorage.getItem('quintaEscolha') == 1){
                                    $("#resultado").html("Desfecho 5"); 
