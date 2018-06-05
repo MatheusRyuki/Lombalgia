@@ -196,7 +196,7 @@ var app = {
                       if (localStorage.getItem('terceiraEscolha') == 2){
                           if (localStorage.getItem('quartaEscolha') == 2){
                                if (localStorage.getItem('quintaEscolha') == 2){
-                                 $("#tratamento").html("Exercícios específicos de estabilização segmentar e reeducação de movimentos fisiológicos ativos sintomáticos, para realização destes de forma assintomática nas amplitudes que vão da metade para o final do movimento. Podem ser utilizadas órteses restritivas para manter as estruturas lombossacrais em menor condição sintomática nas amplitudes de movimento que vão da metade para o final do movimento. Recomendações para cuidados domiciliares como posições de conforto e alívio da dor, transferêcias seguras, e recomendações para a manutenção de um estilo de vida ativo."
+                                 $("#tratamento").html("Exercícios específicos de estabilização segmentar e reeducação de movimentos fisiológicos ativos sintomáticos, para realização destes de forma assintomática nas amplitudes que vão da metade para o final do movimento. Podem ser utilizadas órteses restritivas para manter as estruturas lombossacrais em menor condição sintomática nas amplitudes de movimento que vão da metade para o final do movimento. Recomendações para cuidados domiciliares como posições de conforto e alívio da dor, transferêcias seguras, e recomendações para a manutenção de um estilo de vida ativo.");
                                    $("#diagnostico").html("Lombalgia aguda com diminuição da coordenação");
                                    //Desfecho 6
                             } else if (localStorage.getItem('quintaEscolha') == 1){
@@ -210,7 +210,8 @@ var app = {
                       if (localStorage.getItem('terceiraEscolha') == 3){
                           if (localStorage.getItem('quartaEscolha') == 2){
                                if (localStorage.getItem('quintaEscolha') == 2){
-                                  $("#resultado").html("Desfecho 3"); 
+                                  $("#tratamento").html("Exercícios terapêuticos, mobilizações articulares ou trações que promovam a centralização da dor e melhore o movimento de extensão lombar, orientações quanto a utilização de posicionamentos que promovem a centralização dos sintomas, progresso para intervenções consistentes com a dor subaguda ou estratégias de intervenção para dor lombar crônica com dimiuição da coordenação do movimento."); 
+                                $("#diagnostico").html("Lombalgia aguda com dor referida para membros inferiores");
                                    //Desfecho 7
                             } else if (localStorage.getItem('quintaEscolha') == 1){
                                   $("#resultado").html("Desfecho 7"); 

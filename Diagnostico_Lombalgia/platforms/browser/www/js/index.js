@@ -39,15 +39,14 @@ var app = {
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        
+            $(document.body).css({"background": "url(img/lombalgia.jpg) no-repeat center center fixed",
+                "background-size": "cover", 
+                 "height": "100%"
+                });
         
         //Apresentação Clique
            $("#pri").click(function(){
           $("#first").hide(); 
-               $(document.body).css({"background": "url(img/lombalgia.jpg) no-repeat center center fixed",
-                "background-size": "cover", 
-                 "height": "100%"
-                });
             $("#tela").show();  
        });
         
@@ -183,7 +182,9 @@ var app = {
                      if (localStorage.getItem('terceiraEscolha') == 1){
                           if (localStorage.getItem('quartaEscolha') == 2){
                                if (localStorage.getItem('quintaEscolha') == 2){
-                                  $("#resultado").html("Desfecho 1"); 
+                                   //Desfecho 1
+                                  $("#tratamento").html("Manipulação ou mobilização articular ou outra técnica que seja eficaz na melhora da dor e do movimento vertebral segmentar ou lombopelvico, exercícios terapêuticos para melhora ou manutenção da mobilidade espinhal, aconselhamento para que o paciente mantenha um estilo de vida ativo."); 
+                                   $("#diagnostico").html("Lombalgia aguda com diminuição da mobilidade");
                         //Desfecho 5
                             } else if (localStorage.getItem('quintaEscolha') == 1){
                                    $("#resultado").html("Desfecho 5"); 
@@ -195,7 +196,8 @@ var app = {
                       if (localStorage.getItem('terceiraEscolha') == 2){
                           if (localStorage.getItem('quartaEscolha') == 2){
                                if (localStorage.getItem('quintaEscolha') == 2){
-                                  $("#resultado").html("Desfecho 2");
+                                 $("#tratamento").html("Exercícios específicos de estabilização segmentar e reeducação de movimentos fisiológicos ativos sintomáticos, para realização destes de forma assintomática nas amplitudes que vão da metade para o final do movimento. Podem ser utilizadas órteses restritivas para manter as estruturas lombossacrais em menor condição sintomática nas amplitudes de movimento que vão da metade para o final do movimento. Recomendações para cuidados domiciliares como posições de conforto e alívio da dor, transferêcias seguras, e recomendações para a manutenção de um estilo de vida ativo."
+                                   $("#diagnostico").html("Lombalgia aguda com diminuição da coordenação");
                                    //Desfecho 6
                             } else if (localStorage.getItem('quintaEscolha') == 1){
                                   $("#resultado").html("Desfecho 6");
