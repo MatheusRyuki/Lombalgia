@@ -39,15 +39,14 @@ var app = {
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        
+            $(document.body).css({"background": "url(img/lombalgia.jpg) no-repeat center center fixed",
+                "background-size": "cover", 
+                 "height": "100%"
+                });
         
         //Apresentação Clique
            $("#pri").click(function(){
           $("#first").hide(); 
-               $(document.body).css({"background": "url(img/lombalgia.jpg) no-repeat center center fixed",
-                "background-size": "cover", 
-                 "height": "100%"
-                });
             $("#tela").show();  
        });
         
@@ -184,6 +183,7 @@ var app = {
                           if (localStorage.getItem('quartaEscolha') == 2){
                                if (localStorage.getItem('quintaEscolha') == 2){
                                   $("#resultado").html("Desfecho 1"); 
+                                   $("#diagnostico").html("Lombalgia aguda com diminuição da mobilidade");
                         //Desfecho 5
                             } else if (localStorage.getItem('quintaEscolha') == 1){
                                    $("#resultado").html("Desfecho 5"); 

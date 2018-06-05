@@ -39,15 +39,14 @@ var app = {
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        
+            $(document.body).css({"background": "url(img/lombalgia.jpg) no-repeat center center fixed",
+                "background-size": "cover", 
+                 "height": "100%"
+                });
         
         //Apresentação Clique
            $("#pri").click(function(){
           $("#first").hide(); 
-               $(document.body).css({"background": "url(img/lombalgia.jpg) no-repeat center center fixed",
-                "background-size": "cover", 
-                 "height": "100%"
-                });
             $("#tela").show();  
        });
         
