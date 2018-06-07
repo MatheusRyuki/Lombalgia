@@ -210,7 +210,7 @@ var app = {
                       if (localStorage.getItem('terceiraEscolha') == 3){
                           if (localStorage.getItem('quartaEscolha') == 2){
                                if (localStorage.getItem('quintaEscolha') == 2){
-                                  $("#tratamento").html("Exercícios terapêuticos, mobilizações articulares ou trações que promovam a centralização da dor e melhore o movimento de extensão lombar, orientações quanto a utilização de posicionamentos que promovem a centralização dos sintomas, progresso para intervenções consistentes com a dor subaguda ou estratégias de intervenção para dor lombar crônica com dimiuição da coordenação do movimento."); 
+                                  $("#tratamento").html("Exercícios terapêuticos, mobilizações articulares ou trações que promovam a centralização da dor e melhore o movimento de extensão lombar, orientações quanto a utilização de posicionamentos que promovem a centralização dos sintomas, progresso para intervenções consistentes com a dor subaguda ou estratégias de intervenção para dor lombar crônica com dimiuição da coordenação do movimento. Progredir para intervenções consistentes com casos de lombalgia subaguda ou crônica com diminuição da coordenação do movimentos."); 
                                 $("#diagnostico").html("Lombalgia aguda com dor referida para membros inferiores");
                                    //Desfecho 7
                             } else if (localStorage.getItem('quintaEscolha') == 1){
@@ -225,7 +225,9 @@ var app = {
                       if (localStorage.getItem('terceiraEscolha') == 4){
                           if (localStorage.getItem('quartaEscolha') == 1){
                                if (localStorage.getItem('quintaEscolha') == 2){
-                                  $("#resultado").html("Desfecho 4"); 
+                                  $("#tratamento").html("Aconselhamento ao paciente para adoção de posições e posturas que diminuem a tensão e a compressão das raízes dos nervos envolvidos, tração manual ou mecânica, mobilização articular e/ou tecidos moles adjacentes as raízes com déficits de mobilidade, mobilização neural em amplitude livre da dor para a melhora da mobilidade de elementos neurais centrais e periféricos."); 
+                                   $("#diagnostico").html("Lombalgia aguda com dor irradiada");
+                                   
                                    //Desfecho 8
                             } else if (localStorage.getItem('quintaEscolha') == 1){
                                   $("#resultado").html("Desfecho 8"); 
