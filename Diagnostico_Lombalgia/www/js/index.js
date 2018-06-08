@@ -233,7 +233,8 @@ var app = {
                                    
                                    //Desfecho 8
                             } else if (localStorage.getItem('quintaEscolha') == 1){
-                                  $("#resultado").html("Desfecho 8"); 
+                                 $("#diagnostico").html("Lombalgia aguda associada a disturbios afetivos e/ou cogitivos");
+                                $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
                             }
                     
                         }
@@ -245,7 +246,9 @@ var app = {
                      if (localStorage.getItem('terceiraEscolha') == 1){
                           if (localStorage.getItem('quartaEscolha') == 2){
                                if (localStorage.getItem('quintaEscolha') == 2){
-                                    $("#resultado").html("Desfecho 9");
+                                    $("#diagnostico").html("Lombalgia subaguda com diminuição da mobilidade");
+                                   $("#tratamento").html("Foco na prevenção da lombalgia recorrente através de exercícios terapêuticos para reabilitação de prejuízos coexistentes na coordenação de movimento, diminuição da força muscular e/ou resistência bem como estimular o paciente a mantar um estilo de vida ativo.")
+                                   
                                    //Desfecho 12
                                } else if (localStorage.getItem('quintaEscolha') == 1){
                                     $("#resultado").html("Desfecho 12"); 
