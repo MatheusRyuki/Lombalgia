@@ -260,7 +260,8 @@ var app = {
                      if (localStorage.getItem('terceiraEscolha') == 2){
                           if (localStorage.getItem('quartaEscolha') == 2){
                                if (localStorage.getItem('quintaEscolha') == 2){
-                                    $("#resultado").html("Desfecho 10"); 
+                                    $("#diagnostico").html("Lombalgia subaguda com diminuição da coordenação");
+                                   $("#tratamento").html("Reeducação neuromuscular do movimento para melhorar a estabilidade dinâmica com o objetivo de manter as estruturas lombopelvicas evolvidas em situação assintomática durante as atitudes que envolvam movimentos na metade da amplitude em atividades funcionais e de cuidados pessoais. Procedimentos de terapia manual e exercícios terapêuticos voltados para defícitis de mobilidade identificados na coluna torácica, costelas. Exercícios terapêuticos voltados para recuperar a força e resistência de músculos do tronco e da pelve. Auto cuidados e treino para manter posições dos segmentos envolvidos em de metade da amplitude em situação menos sintomáticos. Estimular o início da reintegração social e ao trabalho com estratégias de controle da dor durante estas atividades.")
                                    //Desfecho 13
                                } else if (localStorage.getItem('quintaEscolha') == 1){
                                     $("#resultado").html("Desfecho 13"); 
