@@ -216,7 +216,8 @@ var app = {
                                 $("#diagnostico").html("Lombalgia aguda com dor referida para membros inferiores");
                                    //Desfecho 7
                             } else if (localStorage.getItem('quintaEscolha') == 1){
-                                  $("#resultado").html("Desfecho 7"); 
+                                 $("#diagnostico").html("Lombalgia aguda associada a disturbios afetivos e/ou cogitivos");
+                                $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
                             }
                     
                             }
