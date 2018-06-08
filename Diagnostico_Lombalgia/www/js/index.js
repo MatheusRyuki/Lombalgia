@@ -188,7 +188,7 @@ var app = {
                         //Desfecho 5
                             } else if (localStorage.getItem('quintaEscolha') == 1){
                                    $("#diagnostico").html("Lombalgia aguda associada a disturbios afetivos e/ou cogitivos");
-                                $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização")
+                                $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
                             }
                           }
                      }
@@ -201,7 +201,8 @@ var app = {
                                    $("#diagnostico").html("Lombalgia aguda com diminuição da coordenação");
                                    //Desfecho 6
                             } else if (localStorage.getItem('quintaEscolha') == 1){
-                                  $("#resultado").html("Desfecho 6");
+                                     $("#diagnostico").html("Lombalgia aguda associada a disturbios afetivos e/ou cogitivos");
+                                $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
                     
                             }
                           }
