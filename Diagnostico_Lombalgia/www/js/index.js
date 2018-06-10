@@ -251,7 +251,8 @@ var app = {
                                    
                                    //Desfecho 12
                                } else if (localStorage.getItem('quintaEscolha') == 1){
-                                    $("#resultado").html("Desfecho 12"); 
+                                    $("#diagnostico").html("Lombalgia subaguda associada a disturbios afetivos e/ou cognitivos");
+                                   $("#tratamento").html("Educação do paciente e aconselhamento voltado para classificação específica do componente cognitivo envolvido (depressão, medo, catastrofização da dor)");
                                }
                           }
                      }
