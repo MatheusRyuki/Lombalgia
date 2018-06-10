@@ -46,17 +46,17 @@ var app = {
         
         //Apresentação Clique
            $("#pri").click(function(){
-          $("#first").hide(); 
-            $("#tela").show();  
+          $("#first").fadeOut(); 
+            $("#tela").fadeIn();  
        });
         
         
         
         //Escolha da Apresentação -certa
         $("#telafin").click(function(){
-          $("#tela").hide();
+          $("#tela").fadeOut();
             $('#introducao').modal('show');  
-           $("#second").show();  
+           $("#second").fadeIn();  
        });
         
         //Escolha errada
@@ -68,110 +68,110 @@ var app = {
         
         //Segundo Clique - Opções 1
         $("#sec1").click(function(){
-               $("#second").hide();  
+               $("#second").fadeOut();  
             localStorage.primeiraEscolha = 1;
-            $("#third").show();
+            $("#third").fadeIn();
         });
         
            //Segundo Clique - Opções 2
         $("#sec2").click(function(){
-               $("#second").hide();  
+               $("#second").fadeOut();  
             localStorage.primeiraEscolha = 2;
-            $("#third").show();
+            $("#third").fadeIn();
         });
         
            //Segundo Clique - Opções 3
         $("#sec3").click(function(){
-               $("#second").hide();  
+               $("#second").fadeOut();  
             localStorage.primeiraEscolha = 3;
-            $("#third").show();
+            $("#third").fadeIn();
         });
         
          //Terceiro Clique - Opções 1
         $("#thi1").click(function(){
-               $("#third").hide(); 
+               $("#third").fadeOut(); 
             localStorage.segundaEscolha = 1;
-            $("#fourth").show();
+            $("#fourth").fadeIn();
         });
         
            //Terceiro Clique - Opções 2
         $("#thi2").click(function(){
-               $("#third").hide();  
+               $("#third").fadeOut();  
             localStorage.segundaEscolha = 2;
-            $("#fourth").show();
+            $("#fourth").fadeIn();
         });
         
            //Terceiro Clique - Opções 3
         $("#thi3").click(function(){
-               $("#third").hide();  
+               $("#third").fadeOut();  
             localStorage.segundaEscolha = 3;
-            $("#fourth").show();
+            $("#fourth").fadeIn();
         });
         
           //Terceiro Clique - Opções 4
         $("#thi4").click(function(){
-               $("#third").hide();  
+               $("#third").fadeOut();  
             localStorage.segundaEscolha = 4;
-            $("#fourth").show();
+            $("#fourth").fadeIn();
         });
         
              //Quarto Clique - Opções 1
         $("#fou1").click(function(){
-               $("#fourth").hide(); 
+               $("#fourth").fadeOut(); 
             localStorage.terceiraEscolha = 1;
-            $("#fifth").show();
+            $("#fifth").fadeIn();
         });
         
            //Quarto Clique - Opções 2
         $("#fou2").click(function(){
-               $("#fourth").hide();  
+               $("#fourth").fadeOut();  
             localStorage.terceiraEscolha = 2;
-            $("#fifth").show();
+            $("#fifth").fadeIn();
         });
         
            //Quarto Clique - Opções 3
         $("#fou3").click(function(){
-               $("#fourth").hide();  
+               $("#fourth").fadeOut();  
             localStorage.terceiraEscolha = 3;
-            $("#fifth").show();
+            $("#fifth").fadeIn();
         });
         
           //Quarto Clique - Opções 4
         $("#fou4").click(function(){
-               $("#fourth").hide();  
+               $("#fourth").fadeOut();  
             localStorage.terceiraEscolha = 4;
-            $("#fifth").show();
+            $("#fifth").fadeIn();
         });
         
             
              //Quinto Clique - Opções 1
         $("#fif1").click(function(){
-               $("#fifth").hide(); 
+               $("#fifth").fadeOut(); 
             localStorage.quartaEscolha = 1;
-            $("#sixty").show();
+            $("#sixty").fadeIn();
         });
         
            //Quinto Clique - Opções 2
         $("#fif2").click(function(){
-               $("#fifth").hide();  
+               $("#fifth").fadeOut();  
             localStorage.quartaEscolha = 2;
-            $("#sixty").show();
+            $("#sixty").fadeIn();
         });
         
            //Sexto Clique - Opções 1
         $("#six1").click(function(){
-               $("#sixty").hide(); 
+               $("#sixty").fadeOut(); 
             localStorage.quintaEscolha = 1;
                teste();
-            $("#seventh").show();
+            $("#seventh").fadeIn();
         });
         
            //Sexto Clique - Opções 2
         $("#six2").click(function(){
-               $("#sixty").hide();  
+               $("#sixty").fadeOut();  
             localStorage.quintaEscolha = 2;
              teste();
-            $("#seventh").show();
+            $("#seventh").fadeIn();
         });
         
         //Função para determinar o final
@@ -323,8 +323,8 @@ var app = {
         //Voltar ao ínicio
         $("#inicio").click(function(){
                localStorage.clear();
-              $("#seventh").hide();
-               $("#first").show(); 
+              $("#seventh").fadeOut();
+               $("#first").fadeIn(); 
         });
      
         console.log('Received Event: ' + id);
