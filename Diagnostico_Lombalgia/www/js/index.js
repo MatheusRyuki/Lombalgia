@@ -291,7 +291,8 @@ var app = {
                      if (localStorage.getItem('terceiraEscolha') == 1){
                           if (localStorage.getItem('quartaEscolha') == 2){
                                if (localStorage.getItem('quintaEscolha') == 2){
-                                  $("#resultado").html("Desfecho 15");
+                                  $("#diagnostico").html("Lombalgia crônica com diminuição da coordenação do movimento");
+                                  $("#tratamento").html("Reeducação neuromuscular para melhorar a estabilidade dinâmica com o objetivo de manter as estruturas lombopelvicas envolvidas em situação assintomática em situações de cuidado pessoais na metade da amplitude de movimento em atividades funcionais, procedimnetos de terapia manual e exercicios terapêutico voltado para  déficits de mobilidade identificados na coluna torácica, segmentos envolvidos em metade da amplitude em situação menos sintomáticas,  estimular o início da reintegração social e ao trabalho com estratégias de controle da dor durante estas atividades.")
                                }
                           }
                      }
