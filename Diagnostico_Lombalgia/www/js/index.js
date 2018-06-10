@@ -301,7 +301,8 @@ var app = {
                      if (localStorage.getItem('terceiraEscolha') == 2){
                           if (localStorage.getItem('quartaEscolha') == 1){
                                if (localStorage.getItem('quintaEscolha') == 2){
-                                  $("#resultado").html("Desfecho 16");
+                                 $("#diagnostico").html("Lombalgia crônica com dor irradiada");
+                                   $("#tratamento").html("Terapia manual e exercícios terapêuticos para a região tóracolombar e diminuição de mobilidade nervosa do quadrante inferior, educação para estratégias de manejo da dor.")
                                }
                           }
                      }
