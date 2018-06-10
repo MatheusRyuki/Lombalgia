@@ -265,7 +265,8 @@ var app = {
                                    $("#tratamento").html("Reeducação neuromuscular do movimento para melhorar a estabilidade dinâmica com o objetivo de manter as estruturas lombopelvicas evolvidas em situação assintomática durante as atitudes que envolvam movimentos na metade da amplitude em atividades funcionais e de cuidados pessoais. Procedimentos de terapia manual e exercícios terapêuticos voltados para defícitis de mobilidade identificados na coluna torácica, costelas. Exercícios terapêuticos voltados para recuperar a força e resistência de músculos do tronco e da pelve. Auto cuidados e treino para manter posições dos segmentos envolvidos em de metade da amplitude em situação menos sintomáticos. Estimular o início da reintegração social e ao trabalho com estratégias de controle da dor durante estas atividades.")
                                    //Desfecho 13
                                } else if (localStorage.getItem('quintaEscolha') == 1){
-                                    $("#resultado").html("Desfecho 13"); 
+                                    $("#diagnostico").html("Lombalgia subaguda associada a disturbios afetivos e/ou cognitivos");
+                                   $("#tratamento").html("Educação do paciente e aconselhamento voltado para classificação específica do componente cognitivo envolvido (depressão, medo, catastrofização da dor)");
                                } 
                           }
                      }
@@ -274,7 +275,7 @@ var app = {
                      if (localStorage.getItem('terceiraEscolha') == 3){
                           if (localStorage.getItem('quartaEscolha') == 1){
                                if (localStorage.getItem('quintaEscolha') == 2){
-                                    $("#diagnostico").html("Lombalgia subaaguda com dor irradiada");
+                                    $("#diagnostico").html("Lombalgia subaguda com dor irradiada");
                                    $("#tratamento").html("Terapia manual para mobilizar as articulações e tecidos moles adjacentes ao nervo envolvido bem como os tecidos nervosos que exibiriem diminuição da Mobilidade. Tração Manual ou Mecânica. Mobilidade neural e eercícios de 'Slump' do meio para o fim da amplitude para melhorar a mobilidade dural e de nervos periféricos.");
                                //Desfecho 14
                                } else if (localStorage.getItem('quintaEscolha') == 1){
