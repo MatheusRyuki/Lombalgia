@@ -311,7 +311,8 @@ var app = {
                      if (localStorage.getItem('terceiraEscolha') == 3){
                           if (localStorage.getItem('quartaEscolha') == 1){
                                if (localStorage.getItem('quintaEscolha') == 1){
-                                  $("#resultado").html("Desfecho 17");
+                                  $("#diagnostico").html("Lombalgia crônica com dor generalizada");
+                                    $("#tratamento").html("Educação do paciente e aconselhamento voltado para classificação específica do componente cognitivo envolvido(depressão, medo, catastrofização da dor, orientações para realização de exercícios aeróbicos prolongados de baixa intensidade");
                                }
                           }
                      }
