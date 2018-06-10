@@ -279,7 +279,8 @@ var app = {
                                    $("#tratamento").html("Terapia manual para mobilizar as articulações e tecidos moles adjacentes ao nervo envolvido bem como os tecidos nervosos que exibiriem diminuição da Mobilidade. Tração Manual ou Mecânica. Mobilidade neural e eercícios de 'Slump' do meio para o fim da amplitude para melhorar a mobilidade dural e de nervos periféricos.");
                                //Desfecho 14
                                } else if (localStorage.getItem('quintaEscolha') == 1){
-                                    $("#resultado").html("Desfecho 14"); 
+                                    $("#diagnostico").html("Lombalgia subaguda associada a disturbios afetivos e/ou cognitivos");
+                                   $("#tratamento").html("Educação do paciente e aconselhamento voltado para classificação específica do componente cognitivo envolvido (depressão, medo, catastrofização da dor)");
                                }
                           }
                      }
