@@ -46,17 +46,17 @@ var app = {
         
         //Apresentação Clique
            $("#pri").click(function(){
-          $("#first").hide(); 
-            $("#tela").show();  
+          $("#first").fadeOut(); 
+            $("#tela").fadeIn();  
        });
         
         
         
         //Escolha da Apresentação -certa
         $("#telafin").click(function(){
-          $("#tela").hide();
+          $("#tela").fadeOut();
             $('#introducao').modal('show');  
-           $("#second").show();  
+           $("#second").fadeIn();  
        });
         
         //Escolha errada
@@ -68,110 +68,110 @@ var app = {
         
         //Segundo Clique - Opções 1
         $("#sec1").click(function(){
-               $("#second").hide();  
+               $("#second").fadeOut();  
             localStorage.primeiraEscolha = 1;
-            $("#third").show();
+            $("#third").fadeIn();
         });
         
            //Segundo Clique - Opções 2
         $("#sec2").click(function(){
-               $("#second").hide();  
+               $("#second").fadeOut();  
             localStorage.primeiraEscolha = 2;
-            $("#third").show();
+            $("#third").fadeIn();
         });
         
            //Segundo Clique - Opções 3
         $("#sec3").click(function(){
-               $("#second").hide();  
+               $("#second").fadeOut();  
             localStorage.primeiraEscolha = 3;
-            $("#third").show();
+            $("#third").fadeIn();
         });
         
          //Terceiro Clique - Opções 1
         $("#thi1").click(function(){
-               $("#third").hide(); 
+               $("#third").fadeOut(); 
             localStorage.segundaEscolha = 1;
-            $("#fourth").show();
+            $("#fourth").fadeIn();
         });
         
            //Terceiro Clique - Opções 2
         $("#thi2").click(function(){
-               $("#third").hide();  
+               $("#third").fadeOut();  
             localStorage.segundaEscolha = 2;
-            $("#fourth").show();
+            $("#fourth").fadeIn();
         });
         
            //Terceiro Clique - Opções 3
         $("#thi3").click(function(){
-               $("#third").hide();  
+               $("#third").fadeOut();  
             localStorage.segundaEscolha = 3;
-            $("#fourth").show();
+            $("#fourth").fadeIn();
         });
         
           //Terceiro Clique - Opções 4
         $("#thi4").click(function(){
-               $("#third").hide();  
+               $("#third").fadeOut();  
             localStorage.segundaEscolha = 4;
-            $("#fourth").show();
+            $("#fourth").fadeIn();
         });
         
              //Quarto Clique - Opções 1
         $("#fou1").click(function(){
-               $("#fourth").hide(); 
+               $("#fourth").fadeOut(); 
             localStorage.terceiraEscolha = 1;
-            $("#fifth").show();
+            $("#fifth").fadeIn();
         });
         
            //Quarto Clique - Opções 2
         $("#fou2").click(function(){
-               $("#fourth").hide();  
+               $("#fourth").fadeOut();  
             localStorage.terceiraEscolha = 2;
-            $("#fifth").show();
+            $("#fifth").fadeIn();
         });
         
            //Quarto Clique - Opções 3
         $("#fou3").click(function(){
-               $("#fourth").hide();  
+               $("#fourth").fadeOut();  
             localStorage.terceiraEscolha = 3;
-            $("#fifth").show();
+            $("#fifth").fadeIn();
         });
         
           //Quarto Clique - Opções 4
         $("#fou4").click(function(){
-               $("#fourth").hide();  
+               $("#fourth").fadeOut();  
             localStorage.terceiraEscolha = 4;
-            $("#fifth").show();
+            $("#fifth").fadeIn();
         });
         
             
              //Quinto Clique - Opções 1
         $("#fif1").click(function(){
-               $("#fifth").hide(); 
+               $("#fifth").fadeOut(); 
             localStorage.quartaEscolha = 1;
-            $("#sixty").show();
+            $("#sixty").fadeIn();
         });
         
            //Quinto Clique - Opções 2
         $("#fif2").click(function(){
-               $("#fifth").hide();  
+               $("#fifth").fadeOut();  
             localStorage.quartaEscolha = 2;
-            $("#sixty").show();
+            $("#sixty").fadeIn();
         });
         
            //Sexto Clique - Opções 1
         $("#six1").click(function(){
-               $("#sixty").hide(); 
+               $("#sixty").fadeOut(); 
             localStorage.quintaEscolha = 1;
                teste();
-            $("#seventh").show();
+            $("#seventh").fadeIn();
         });
         
            //Sexto Clique - Opções 2
         $("#six2").click(function(){
-               $("#sixty").hide();  
+               $("#sixty").fadeOut();  
             localStorage.quintaEscolha = 2;
              teste();
-            $("#seventh").show();
+            $("#seventh").fadeIn();
         });
         
         //Função para determinar o final
@@ -265,7 +265,8 @@ var app = {
                                    $("#tratamento").html("Reeducação neuromuscular do movimento para melhorar a estabilidade dinâmica com o objetivo de manter as estruturas lombopelvicas evolvidas em situação assintomática durante as atitudes que envolvam movimentos na metade da amplitude em atividades funcionais e de cuidados pessoais. Procedimentos de terapia manual e exercícios terapêuticos voltados para defícitis de mobilidade identificados na coluna torácica, costelas. Exercícios terapêuticos voltados para recuperar a força e resistência de músculos do tronco e da pelve. Auto cuidados e treino para manter posições dos segmentos envolvidos em de metade da amplitude em situação menos sintomáticos. Estimular o início da reintegração social e ao trabalho com estratégias de controle da dor durante estas atividades.")
                                    //Desfecho 13
                                } else if (localStorage.getItem('quintaEscolha') == 1){
-                                    $("#resultado").html("Desfecho 13"); 
+                                    $("#diagnostico").html("Lombalgia subaguda associada a disturbios afetivos e/ou cognitivos");
+                                   $("#tratamento").html("Educação do paciente e aconselhamento voltado para classificação específica do componente cognitivo envolvido (depressão, medo, catastrofização da dor)");
                                } 
                           }
                      }
@@ -274,11 +275,12 @@ var app = {
                      if (localStorage.getItem('terceiraEscolha') == 3){
                           if (localStorage.getItem('quartaEscolha') == 1){
                                if (localStorage.getItem('quintaEscolha') == 2){
-                                    $("#diagnostico").html("Lombalgia subaaguda com dor irradiada");
+                                    $("#diagnostico").html("Lombalgia subaguda com dor irradiada");
                                    $("#tratamento").html("Terapia manual para mobilizar as articulações e tecidos moles adjacentes ao nervo envolvido bem como os tecidos nervosos que exibiriem diminuição da Mobilidade. Tração Manual ou Mecânica. Mobilidade neural e eercícios de 'Slump' do meio para o fim da amplitude para melhorar a mobilidade dural e de nervos periféricos.");
                                //Desfecho 14
                                } else if (localStorage.getItem('quintaEscolha') == 1){
-                                    $("#resultado").html("Desfecho 14"); 
+                                    $("#diagnostico").html("Lombalgia subaguda associada a disturbios afetivos e/ou cognitivos");
+                                   $("#tratamento").html("Educação do paciente e aconselhamento voltado para classificação específica do componente cognitivo envolvido (depressão, medo, catastrofização da dor)");
                                }
                           }
                      }
@@ -289,7 +291,8 @@ var app = {
                      if (localStorage.getItem('terceiraEscolha') == 1){
                           if (localStorage.getItem('quartaEscolha') == 2){
                                if (localStorage.getItem('quintaEscolha') == 2){
-                                  $("#resultado").html("Desfecho 15");
+                                  $("#diagnostico").html("Lombalgia crônica com diminuição da coordenação do movimento");
+                                  $("#tratamento").html("Reeducação neuromuscular para melhorar a estabilidade dinâmica com o objetivo de manter as estruturas lombopelvicas envolvidas em situação assintomática em situações de cuidado pessoais na metade da amplitude de movimento em atividades funcionais, procedimnetos de terapia manual e exercicios terapêutico voltado para  déficits de mobilidade identificados na coluna torácica, segmentos envolvidos em metade da amplitude em situação menos sintomáticas,  estimular o início da reintegração social e ao trabalho com estratégias de controle da dor durante estas atividades.")
                                }
                           }
                      }
@@ -298,7 +301,8 @@ var app = {
                      if (localStorage.getItem('terceiraEscolha') == 2){
                           if (localStorage.getItem('quartaEscolha') == 1){
                                if (localStorage.getItem('quintaEscolha') == 2){
-                                  $("#resultado").html("Desfecho 16");
+                                 $("#diagnostico").html("Lombalgia crônica com dor irradiada");
+                                   $("#tratamento").html("Terapia manual e exercícios terapêuticos para a região tóracolombar e diminuição de mobilidade nervosa do quadrante inferior, educação para estratégias de manejo da dor.")
                                }
                           }
                      }
@@ -307,7 +311,8 @@ var app = {
                      if (localStorage.getItem('terceiraEscolha') == 3){
                           if (localStorage.getItem('quartaEscolha') == 1){
                                if (localStorage.getItem('quintaEscolha') == 1){
-                                  $("#resultado").html("Desfecho 17");
+                                  $("#diagnostico").html("Lombalgia crônica com dor generalizada");
+                                    $("#tratamento").html("Educação do paciente e aconselhamento voltado para classificação específica do componente cognitivo envolvido(depressão, medo, catastrofização da dor, orientações para realização de exercícios aeróbicos prolongados de baixa intensidade.");
                                }
                           }
                      }
@@ -318,8 +323,8 @@ var app = {
         //Voltar ao ínicio
         $("#inicio").click(function(){
                localStorage.clear();
-              $("#seventh").hide();
-               $("#first").show(); 
+              $("#seventh").fadeOut();
+               $("#first").fadeIn(); 
         });
      
         console.log('Received Event: ' + id);
