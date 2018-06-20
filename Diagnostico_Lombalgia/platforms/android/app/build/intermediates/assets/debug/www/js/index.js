@@ -183,14 +183,17 @@ var app = {
                           if (localStorage.getItem('quartaEscolha') == 2){
                                if (localStorage.getItem('quintaEscolha') == 2){
                                    //Desfecho 1
-                                  $("#tratamento").html("Manipulação ou mobilização articular ou outra técnica que seja eficaz na melhora da dor e do movimento vertebral segmentar ou lombopelvico, exercícios terapêuticos para melhora ou manutenção da mobilidade espinhal, aconselhamento para que o paciente mantenha um estilo de vida ativo."); 
+                                  $("#tratamento").html("Manipulação ou mobilização articular ou outra técnica que seja eficaz na melhora da dor e do movimento vertebral segmentar ou lombopélvico, exercícios terapêuticos para melhora ou manutenção da mobilidade espinhal, aconselhamento para que o paciente mantenha um estilo de vida ativo."); 
                                    $("#diagnostico").html("Lombalgia aguda com diminuição da mobilidade");
                         //Desfecho 5
                             } else if (localStorage.getItem('quintaEscolha') == 1){
                                    $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cogitivos");
                                 $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
                             }
-                          }
+                          } 
+                         else if (localStorage.getItem('quartaEscolha') == 1){
+                             erro();
+                         }
                      }
                     //Desfecho 2
                 } else if (localStorage.getItem('segundaEscolha') == 2) {
@@ -206,6 +209,9 @@ var app = {
                     
                             }
                           }
+                           else if (localStorage.getItem('quartaEscolha') == 1){
+                             erro();
+                         }
                         }
         //Desfecho 3            
         }else if (localStorage.getItem('segundaEscolha') == 3){
@@ -221,6 +227,9 @@ var app = {
                             }
                     
                             }
+                           else if (localStorage.getItem('quartaEscolha') == 1){
+                             erro();
+                         }
                         }
               
             // Desfecho 4
@@ -238,6 +247,9 @@ var app = {
                             }
                     
                         }
+                           else if (localStorage.getItem('quartaEscolha') == 2){
+                             erro();
+                         }
                     }
             }
                 //Desfecho 9
@@ -255,6 +267,9 @@ var app = {
                                    $("#tratamento").html("Educação do paciente e aconselhamento de encaminhamento ao psicólogo");
                                }
                           }
+                          else if (localStorage.getItem('quartaEscolha') == 1){
+                             erro();
+                         }
                      }
                  //Desfecho 10
              } else if (localStorage.getItem('segundaEscolha') == 2){
@@ -262,13 +277,16 @@ var app = {
                           if (localStorage.getItem('quartaEscolha') == 2){
                                if (localStorage.getItem('quintaEscolha') == 2){
                                     $("#diagnostico").html("Lombalgia subaguda com diminuição da coordenação");
-                                   $("#tratamento").html("Reeducação neuromuscular do movimento para melhorar a estabilidade dinâmica com o objetivo de manter as estruturas lombopelvicas envolvidas em situação assintomática durante as atitudes que envolvam movimentos na metade da amplitude em atividades funcionais e de cuidados pessoais. Procedimentos de terapia manual e exercícios terapêuticos voltados para defícitis de mobilidade identificados na coluna torácica, costelas. Exercícios terapêuticos voltados para recuperar a força e resistência de músculos do tronco e da pelve. Auto cuidado e treino para manter a posição dos segmento envolvidos na metade da amplitude em situação menos sintomática. Estimular o início da reintegração social e ao trabalho com estratégias de controle da dor durante estas atividades.")
+                                   $("#tratamento").html("Reeducação neuromuscular do movimento para melhorar a estabilidade dinâmica com o objetivo de manter as estruturas lombopélvicas envolvidas em situação assintomática durante as atitudes que envolvam movimentos na metade da amplitude em atividades funcionais e de cuidados pessoais. Procedimentos de terapia manual e exercícios terapêuticos voltados para defícitis de mobilidade identificados na coluna torácica, costelas. Exercícios terapêuticos voltados para recuperar a força e resistência de músculos do tronco e da pelve. Auto cuidado e treino para manter a posição dos segmento envolvidos na metade da amplitude em situação menos sintomática. Estimular o início da reintegração social e ao trabalho com estratégias de controle da dor durante estas atividades.")
                                    //Desfecho 13
                                } else if (localStorage.getItem('quintaEscolha') == 1){
                                     $("#diagnostico").html("Lombalgia subaguda associada a distúrbios afetivos e/ou cognitivos");
                                    $("#tratamento").html("Educação do paciente e aconselhamento de encaminhamento ao psicólogo");
                                } 
                           }
+                          else if (localStorage.getItem('quartaEscolha') == 1){
+                             erro();
+                         }
                      }
                  //Desfecho 11
              } else if (localStorage.getItem('segundaEscolha') == 3){
@@ -283,6 +301,9 @@ var app = {
                                    $("#tratamento").html("Educação do paciente e aconselhamento de encaminhamento ao psicólogo");
                                }
                           }
+                          else if (localStorage.getItem('quartaEscolha') == 2){
+                             erro();
+                         }
                      }
              }
             //Desfecho 15
@@ -295,6 +316,9 @@ var app = {
                                   $("#tratamento").html("Reeducação neuromuscular para melhorar a estabilidade dinâmica com o objetivo de manter as estruturas lombopélvicas envolvidas em situação assintomática em situações de cuidado pessoal na metade da amplitude de movimento em atividades funcionais, procedimentos de terapia manual e exercícios terapêuticos voltados para  déficits de mobilidade identificados na coluna torácica,  estimular o início da reintegração social e ao trabalho com estratégias de controle da dor durante estas atividades.")
                                }
                           }
+                          else if (localStorage.getItem('quartaEscolha') == 1){
+                             erro();
+                         }
                      }
                     //Desfecho 16
                 } else if (localStorage.getItem('segundaEscolha') == 2){
@@ -305,6 +329,9 @@ var app = {
                                    $("#tratamento").html("Terapia manual e exercícios terapêuticos para a região tóracolombar e diminuição de mobilidade nervosa do quadrante inferior, educação para estratégias de manejo da dor.")
                                }
                           }
+                          else if (localStorage.getItem('quartaEscolha') == 1){
+                             erro();
+                         }
                      }
                     //Desfecho 17
                 } else if (localStorage.getItem('segundaEscolha') == 3){
@@ -315,6 +342,9 @@ var app = {
                                     $("#tratamento").html("Educação do paciente e aconselhamento voltado para classificação específica do componente cognitivo envolvido(depressão, medo, catastrofização da dor, orientações para realização de exercícios aeróbicos prolongados de baixa intensidade.)");
                                }
                           }
+                          else if (localStorage.getItem('quartaEscolha') == 2){
+                             erro();
+                         }
                      }
                 }
         }
@@ -326,6 +356,12 @@ var app = {
               $("#seventh").fadeOut();
                $("#first").fadeIn(); 
         });
+        
+        //Mensagem de erro
+        function erro(){
+             $("#diagnostico").html("<strong>Ocorreu um erro!</strong>");
+            $("#tratamento").html("Dados inconsistentes com qualquer subclassificação, por favor, reavalie as características de mobilidade e testes de envolvimento do componente neurológico!");
+        };
      
         console.log('Received Event: ' + id);
     }

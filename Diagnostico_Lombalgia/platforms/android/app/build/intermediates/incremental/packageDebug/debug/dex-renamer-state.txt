@@ -1,4 +1,4 @@
-#Tue Jun 19 10:41:17 GFT 2018
+#Wed Jun 20 18:52:04 GFT 2018
 base.0=C\:\\Users\\dr_4_\\Downloads\\download\\Projeto-Lombalgia\\Diagnostico_Lombalgia\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 renamed.0=classes.dex
 file.0=C\:\\Users\\dr_4_\\Downloads\\download\\Projeto-Lombalgia\\Diagnostico_Lombalgia\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0\\classes.dex

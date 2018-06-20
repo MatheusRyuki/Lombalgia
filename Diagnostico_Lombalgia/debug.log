@@ -1,3 +1,12 @@
 [0523/191213.309:ERROR:settings.cc(263)] Settings version is not 1
 [0523/194838.885:ERROR:settings.cc(263)] Settings version is not 1
 [0523/195706.057:ERROR:settings.cc(263)] Settings version is not 1
+[0620/185251.825:ERROR:file_io_win.cc(179)] CreateFile C:\Users\Public\Documents\Google\Chrome\settings.dat: Acesso negado. (0x5)
+[0620/185251.865:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: O pipe foi finalizado. (0x6D)
+[0620/185251.917:ERROR:file_io_win.cc(179)] CreateFile C:\Users\Public\Documents\Google\Chrome\settings.dat: Acesso negado. (0x5)
+[0620/185940.079:ERROR:file_io_win.cc(179)] CreateFile C:\Users\Public\Documents\Google\Chrome\settings.dat: Acesso negado. (0x5)
+[0620/185940.099:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: O pipe foi finalizado. (0x6D)
+[0620/185940.139:ERROR:file_io_win.cc(179)] CreateFile C:\Users\Public\Documents\Google\Chrome\settings.dat: Acesso negado. (0x5)
+[0620/190047.606:ERROR:file_io_win.cc(179)] CreateFile C:\Users\Public\Documents\Google\Chrome\settings.dat: Acesso negado. (0x5)
+[0620/190047.630:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: O pipe foi finalizado. (0x6D)
+[0620/190047.634:ERROR:file_io_win.cc(179)] CreateFile C:\Users\Public\Documents\Google\Chrome\settings.dat: Acesso negado. (0x5)
