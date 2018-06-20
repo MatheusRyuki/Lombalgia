@@ -183,7 +183,7 @@ var app = {
                           if (localStorage.getItem('quartaEscolha') == 2){
                                if (localStorage.getItem('quintaEscolha') == 2){
                                    //Desfecho 1
-                                  $("#tratamento").html("Manipulação ou mobilização articular ou outra técnica que seja eficaz na melhora da dor e do movimento vertebral segmentar ou lombopelvico, exercícios terapêuticos para melhora ou manutenção da mobilidade espinhal, aconselhamento para que o paciente mantenha um estilo de vida ativo."); 
+                                  $("#tratamento").html("Manipulação ou mobilização articular ou outra técnica que seja eficaz na melhora da dor e do movimento vertebral segmentar ou lombopélvico, exercícios terapêuticos para melhora ou manutenção da mobilidade espinhal, aconselhamento para que o paciente mantenha um estilo de vida ativo."); 
                                    $("#diagnostico").html("Lombalgia aguda com diminuição da mobilidade");
                         //Desfecho 5
                             } else if (localStorage.getItem('quintaEscolha') == 1){
@@ -262,7 +262,7 @@ var app = {
                           if (localStorage.getItem('quartaEscolha') == 2){
                                if (localStorage.getItem('quintaEscolha') == 2){
                                     $("#diagnostico").html("Lombalgia subaguda com diminuição da coordenação");
-                                   $("#tratamento").html("Reeducação neuromuscular do movimento para melhorar a estabilidade dinâmica com o objetivo de manter as estruturas lombopelvicas envolvidas em situação assintomática durante as atitudes que envolvam movimentos na metade da amplitude em atividades funcionais e de cuidados pessoais. Procedimentos de terapia manual e exercícios terapêuticos voltados para defícitis de mobilidade identificados na coluna torácica, costelas. Exercícios terapêuticos voltados para recuperar a força e resistência de músculos do tronco e da pelve. Auto cuidado e treino para manter a posição dos segmento envolvidos na metade da amplitude em situação menos sintomática. Estimular o início da reintegração social e ao trabalho com estratégias de controle da dor durante estas atividades.")
+                                   $("#tratamento").html("Reeducação neuromuscular do movimento para melhorar a estabilidade dinâmica com o objetivo de manter as estruturas lombopélvicas envolvidas em situação assintomática durante as atitudes que envolvam movimentos na metade da amplitude em atividades funcionais e de cuidados pessoais. Procedimentos de terapia manual e exercícios terapêuticos voltados para defícitis de mobilidade identificados na coluna torácica, costelas. Exercícios terapêuticos voltados para recuperar a força e resistência de músculos do tronco e da pelve. Auto cuidado e treino para manter a posição dos segmento envolvidos na metade da amplitude em situação menos sintomática. Estimular o início da reintegração social e ao trabalho com estratégias de controle da dor durante estas atividades.")
                                    //Desfecho 13
                                } else if (localStorage.getItem('quintaEscolha') == 1){
                                     $("#diagnostico").html("Lombalgia subaguda associada a distúrbios afetivos e/ou cognitivos");
