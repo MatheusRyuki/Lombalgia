@@ -18,7 +18,7 @@
  */
 var app = {
     // Application Constructor
-    initialize: function() {
+    initialize: function () {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
     },
 
@@ -26,8 +26,8 @@ var app = {
     //
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
-    onDeviceReady: function() {
-         $("#tela").hide();
+    onDeviceReady: function () {
+        $("#tela").hide();
         $("#second").hide();
          $("#third").hide();
         $("#fourth").hide();
@@ -35,15 +35,17 @@ var app = {
         $("#sixty").hide();
         $("#seventh").hide();
         this.receivedEvent('deviceready');
-    },
-
-    // Update DOM on a Received Event
-    receivedEvent: function(id) {
-            $(document.body).css({"background": "url(img/lombalgia.jpg) no-repeat center center fixed",
+        $(document.body).css({"background": "url(img/lombalgia.png) no-repeat center center fixed",
                 "background-size": "cover", 
                  "height": "100%"
                 });
         
+    },
+
+    // Update DOM on a Received Event
+    receivedEvent: function(id) {
+        
+          
         //Apresentação Clique
            $("#pri").click(function(){
           $("#first").fadeOut(); 
@@ -348,7 +350,7 @@ var app = {
                      }
                 }
         }
-    };
+    }
         
         //Voltar ao ínicio
         $("#inicio").click(function(){
@@ -361,7 +363,7 @@ var app = {
         function erro(){
              $("#diagnostico").html("<strong>Ocorreu um erro!</strong>");
             $("#tratamento").html("Dados inconsistentes com qualquer subclassificação, por favor, reavalie as características de mobilidade e testes de envolvimento do componente neurológico!");
-        };
+        }
      
         console.log('Received Event: ' + id);
     }
