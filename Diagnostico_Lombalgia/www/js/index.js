@@ -191,12 +191,12 @@ var app = {
                             } else if (localStorage.getItem('quintaEscolha') == 1){
                                    $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cogitivos");
                                 $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
-                            }
-                          } 
+                            } else{erro();}
+                          } else{erro();} 
                          else if (localStorage.getItem('quartaEscolha') == 1){
                              erro();
-                         }
-                     }
+                         } else{erro();}
+                     } else{erro();}
                     //Desfecho 2
                 } else if (localStorage.getItem('segundaEscolha') == 2) {
                       if (localStorage.getItem('terceiraEscolha') == 2){
@@ -209,12 +209,12 @@ var app = {
                                      $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cogitivos");
                                 $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
                     
-                            }
-                          }
+                            } else{erro();}
+                          } else{erro();}
                            else if (localStorage.getItem('quartaEscolha') == 1){
                              erro();
-                         }
-                        }
+                         } else{erro();}
+                        } else{erro();}
         //Desfecho 3            
         }else if (localStorage.getItem('segundaEscolha') == 3){
                       if (localStorage.getItem('terceiraEscolha') == 3){
@@ -226,13 +226,13 @@ var app = {
                             } else if (localStorage.getItem('quintaEscolha') == 1){
                                  $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cogitivos");
                                 $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
-                            }
+                            } else{erro();}
                     
-                            }
+                            } else{erro();}
                            else if (localStorage.getItem('quartaEscolha') == 1){
                              erro();
-                         }
-                        }
+                         } else{erro();}
+                        } else{erro();}
               
             // Desfecho 4
             } else if (localStorage.getItem('segundaEscolha') == 4){
@@ -246,14 +246,14 @@ var app = {
                             } else if (localStorage.getItem('quintaEscolha') == 1){
                                  $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cogitivos");
                                 $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
-                            }
+                            }else{erro();}
                     
-                        }
+                        }else{erro();}
                            else if (localStorage.getItem('quartaEscolha') == 2){
                              erro();
-                         }
-                    }
-            }
+                         }else{erro();}
+                    }else{erro();}
+            }else{erro();}
                 //Desfecho 9
         }  if (localStorage.getItem('primeiraEscolha') == 2){
              if (localStorage.getItem('segundaEscolha') == 1){
@@ -267,12 +267,12 @@ var app = {
                                } else if (localStorage.getItem('quintaEscolha') == 1){
                                     $("#diagnostico").html("Lombalgia subaguda associada a distúrbios afetivos e/ou cognitivos");
                                    $("#tratamento").html("Educação do paciente e aconselhamento de encaminhamento ao psicólogo");
-                               }
-                          }
+                               }else{erro();}
+                          }else{erro();}
                           else if (localStorage.getItem('quartaEscolha') == 1){
                              erro();
-                         }
-                     }
+                         }else{erro();}
+                     }else{erro();}
                  //Desfecho 10
              } else if (localStorage.getItem('segundaEscolha') == 2){
                      if (localStorage.getItem('terceiraEscolha') == 2){
@@ -284,12 +284,12 @@ var app = {
                                } else if (localStorage.getItem('quintaEscolha') == 1){
                                     $("#diagnostico").html("Lombalgia subaguda associada a distúrbios afetivos e/ou cognitivos");
                                    $("#tratamento").html("Educação do paciente e aconselhamento de encaminhamento ao psicólogo");
-                               } 
-                          }
+                               }else{erro();} 
+                          }else{erro();}
                           else if (localStorage.getItem('quartaEscolha') == 1){
                              erro();
-                         }
-                     }
+                         }else{erro();}
+                     }else{erro();}
                  //Desfecho 11
              } else if (localStorage.getItem('segundaEscolha') == 3){
                      if (localStorage.getItem('terceiraEscolha') == 3){
@@ -301,13 +301,13 @@ var app = {
                                } else if (localStorage.getItem('quintaEscolha') == 1){
                                     $("#diagnostico").html("Lombalgia subaguda associada a distúrbios afetivos e/ou cognitivos");
                                    $("#tratamento").html("Educação do paciente e aconselhamento de encaminhamento ao psicólogo");
-                               }
-                          }
+                               }else{erro();}
+                          }else{erro();}
                           else if (localStorage.getItem('quartaEscolha') == 2){
                              erro();
-                         }
-                     }
-             }
+                         }else{erro();}
+                     }else{erro();}
+             }else{erro();}
             //Desfecho 15
         } if (localStorage.getItem('primeiraEscolha') == 3){
                 if (localStorage.getItem('segundaEscolha') == 1){
@@ -316,12 +316,12 @@ var app = {
                                if (localStorage.getItem('quintaEscolha') == 2){
                                   $("#diagnostico").html("Lombalgia crônica com diminuição da coordenação do movimento");
                                   $("#tratamento").html("Reeducação neuromuscular para melhorar a estabilidade dinâmica com o objetivo de manter as estruturas lombopélvicas envolvidas em situação assintomática em situações de cuidado pessoal na metade da amplitude de movimento em atividades funcionais, procedimentos de terapia manual e exercícios terapêuticos voltados para  déficits de mobilidade identificados na coluna torácica,  estimular o início da reintegração social e ao trabalho com estratégias de controle da dor durante estas atividades.")
-                               }
-                          }
+                               }else{erro();}
+                          }else{erro();}
                           else if (localStorage.getItem('quartaEscolha') == 1){
                              erro();
-                         }
-                     }
+                         }else{erro();}
+                     }else{erro();}
                     //Desfecho 16
                 } else if (localStorage.getItem('segundaEscolha') == 2){
                      if (localStorage.getItem('terceiraEscolha') == 2){
@@ -329,12 +329,12 @@ var app = {
                                if (localStorage.getItem('quintaEscolha') == 2){
                                  $("#diagnostico").html("Lombalgia crônica com dor irradiada");
                                    $("#tratamento").html("Terapia manual e exercícios terapêuticos para a região tóracolombar e diminuição de mobilidade nervosa do quadrante inferior, educação para estratégias de manejo da dor.")
-                               }
-                          }
+                               }else{erro();}
+                          }else{erro();}
                           else if (localStorage.getItem('quartaEscolha') == 1){
                              erro();
-                         }
-                     }
+                         }else{erro();}
+                     }else{erro();}
                     //Desfecho 17
                 } else if (localStorage.getItem('segundaEscolha') == 3){
                      if (localStorage.getItem('terceiraEscolha') == 3){
@@ -342,14 +342,14 @@ var app = {
                                if (localStorage.getItem('quintaEscolha') == 1){
                                   $("#diagnostico").html("Lombalgia crônica com dor generalizada");
                                     $("#tratamento").html("Educação do paciente e aconselhamento voltado para classificação específica do componente cognitivo envolvido(depressão, medo, catastrofização da dor, orientações para realização de exercícios aeróbicos prolongados de baixa intensidade.)");
-                               }
-                          }
+                               }else{erro();}
+                          }else{erro();}
                           else if (localStorage.getItem('quartaEscolha') == 2){
                              erro();
-                         }
-                     }
-                }
-        }
+                         }else{erro();}
+                     }else{erro();}
+                }else{erro();}
+        }else{erro();}
     }
         
         //Voltar ao ínicio
