@@ -34,11 +34,21 @@
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/semantic-ui.css">
+        <style>
+            #geral {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap; 
+    overflow: auto;
+            }
+        </style>
        
         <title>Hello World</title>
     </head>
     <body>
-        <div class="ui container">
+        <div class="ui container" id="geral">
             
             <!-- Primeira Instância -->
             <div id="first" class="ui segment">
@@ -52,7 +62,7 @@
             <h3 class="ui top attached center aligned header" style="margin-top: 5%;">
   Duração da Dor Lombar
             </h3>
-            <div id="sec1" class="ui secondary button" style="margin-top: 15%;">Dor Lombar com tempo inferior a um mês de duração.</div>
+            <div id="sec1" class="ui justified aligned secondary button" style="margin-top: 15%;">Dor Lombar com tempo inferior a um mês de duração.</div>
             <div id="sec2" class="ui secondary button"  style="margin-top: 15%;">Dor Lombar com tempo superior a um mês e inferior a três meses de duração.</div>
                 <div id="sec3" class="ui secondary button"  style="margin-top: 15%;">Dor Lombar com tempo superior a três meses de duração.</div>
              
@@ -139,7 +149,7 @@
              <button id="telafin" class="fluid ui secondary button" style="margin-top: 10%; margin-bottom: 10%">Paciente com lombalgia sem associação de nehuma das caracteristicas listadas abaixo</button>
                  <button id="urgencia" class="fluid ui secondary button" style="margin-bottom: 10%;">Pacientes que possuam <strong>dor lombar aguda</strong> associada com Red Flag:
               </button>
-                <button id="ayuda" class="fluid ui secondary button" style="margin-bottom: 10%;">Red Flags
+                <button id="ayuda" class="fluid ui  secondary button" style="margin-bottom: 10%;">Red Flags
                 </button>
             </div>
       
