@@ -39,6 +39,7 @@ var app = {
                 "background-size": "cover", 
                  "height": "100%"
                 });
+        $('html').addClass('android-scroll-bar');
         
     },
 
@@ -361,7 +362,7 @@ var app = {
         
         //Mensagem de erro
         function erro(){
-             $("#diagnostico").html("<strong>Ocorreu um erro!</strong>");
+             $("#diagnostico").html("<strong>Informações inconsistentes!    </strong>");
             $("#tratamento").html("Dados inconsistentes com qualquer subclassificação, por favor, reavalie as características de mobilidade e testes de envolvimento do componente neurológico!");
         }
      
