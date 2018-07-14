@@ -58,6 +58,11 @@ var app = {
         $('#redflag').modal('show')
        });
         
+         //Sobre
+          $("#sobre").click(function(){
+        $('#about').modal('show')
+       });
+        
         
         //Escolha da Apresentação -certa
         $("#telafin").click(function(){
