@@ -41,32 +41,23 @@
     align-items: center;
     align-content: center;
     flex-wrap: wrap; 
-    overflow-y: auto;
             }
-            
-.android-scroll-bar ::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-	background-color: #F5F5F5;
-}
-        
-.android-scroll-bar ::-webkit-scrollbar {
-	width: 12px;
-	background-color: #F5F5F5;
-}
-
-.android-scroll-bar ::-webkit-scrollbar-thumb {
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: #D62929;
-}
+            #setaIcon {
+                position: fixed;
+                margin-top: 90%;
+                margin-left: 80%;
+            }
+ 
 
         </style>
        
         <title>Hello World</title>
     </head>
     <body>
-        <div class="ui container" id="geral">
+        
+           
+        <div class="ui container" id="geral">    
+          
             
             <!-- Primeira Instância -->
             <div id="first" class="ui segment">
@@ -105,6 +96,7 @@
               <h3 class="ui top attached center aligned header" style="margin-top: 5%;">
                 Caracterização da Mobilidade
             </h3>
+            <img id="setaIcon" class="ui mini circular image" src="img/seta.png">
             <div id="fou1" class="ui secondary button" style="margin-top: 10%;">Região da coluna torácica, ou lombar, ou sacroilíaca, com restrições segmentares de movimento. Apresenta reprodução de sintomas dolorosos aos testes provocativos de mobilidade da coluna torácica baixa, lombar ou sacroilíaca.</div>
               
             <div id="fou2" class="ui secondary button"  style="margin-top: 10%;">Sintomas dolorosos relatados ao repouso ou na primeira metade dos movimentos da coluna lombar. Apresenta reprodução de sintomas dolorosos aos testes provocativos de mobilidade da coluna torácica baixa,  lombar, ou sacroiliaca. Comprometimento da coordenação do movimento na região lombopélvica aos movimentos de flexão e extensão (Instabilidade segmentar lombar)</div>

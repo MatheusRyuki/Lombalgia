@@ -39,7 +39,13 @@ var app = {
                 "background-size": "cover", 
                  "height": "100%"
                 });
-        $('html').addClass('android-scroll-bar');
+       
+        
+      $(window).scroll(function() {   
+   if($(window).scrollTop() + $(window).height() > $(document).height() - 50) {
+       $("#setaIcon").hide();
+   }
+}); 
         
     },
 
@@ -362,13 +368,15 @@ var app = {
         $("#inicio").click(function(){
                localStorage.clear();
               $("#seventh").fadeOut();
-               $("#first").fadeIn(); 
+               $("#first").fadeIn();
+            $("#setaIcon").show();
         });
         
         //Mensagem de erro
         function erro(){
              $("#diagnostico").html("<strong>Informações inconsistentes!    </strong>");
             $("#tratamento").html("Dados inconsistentes com qualquer subclassificação, por favor, reavalie as características de mobilidade e testes de envolvimento do componente neurológico!");
+       $("#setaIcon").hide();
         }
      
         console.log('Received Event: ' + id);

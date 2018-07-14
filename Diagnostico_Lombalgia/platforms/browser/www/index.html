@@ -41,20 +41,13 @@
     align-items: center;
     align-content: center;
     flex-wrap: wrap; 
-    overflow: scroll;  
             }
-            
-::-webkit-scrollbar {
-	width: 8px;
-}
-
-::-webkit-scrollbar-track {
-	background: white;
-}
-
-::-webkit-scrollbar-thumb {
-	background: rgba(255,0,0,0.8);
-}
+            #setaIcon {
+                position: absolute;
+                margin-top: 10%;
+                margin-left: 10%;
+            }
+ 
 
         </style>
        
@@ -63,11 +56,14 @@
     <body>
         <div class="ui container" id="geral">
             
+            <img id="setaIcon" class="ui tiny circular image" src="img/seta.png">
+            
             <!-- Primeira Instância -->
             <div id="first" class="ui segment">
                 <img class="ui centered small image" src="img/logo.png">
                 <h1 class="ui center aligned header">Diagnóstico de Lombalgia</h1>
-                <button id="pri" class="ui primary button" style="margin-left: 30%">Comece aqui!</button>  
+                <button id="pri" class="ui primary button" style="margin-left: 30%">Comece aqui!</button> 
+                <button id="sobre" class="ui secondary button" style="margin-left: 25%; margin-top: 5%">Sobre o Aplicativo</button>  
         </div>
             
             <!-- Segunda Instância -->
@@ -216,6 +212,21 @@
                 <p>- Déficit neurológico progressivo em um ou ambos os membros inferiores</p>
                 <p>- Sistemas persistentes há mais de 4 semanas(agravamento da dor)</p>
                 <p>- Gravidez</p>
+        </div>
+  <div class="actions">
+    <div class="ui green ok inverted button">
+      Entendi
+    </div>
+  </div>
+</div>
+            
+            <!--Sobre-->
+            <div class="ui basic modal" id="about">
+    <div class="header">
+        Sobre o aplicativo
+    </div>
+     <div class="content">
+              Este Aplicativo representa o produto da dissertação de mestrado de Luzielma Macêdo Glória, do programa de Pós-Graduação em Saúde na Amazônia da Universidade Federal do Pará/Universidade do Estado do Pará sob orientação dos professores Givago da Silva Souza (UFPA) e André dos Santos Cabral (UEPA), com suporte de Matheus Ryuki Medeiros Kaiya na parte tecnológica.
         </div>
   <div class="actions">
     <div class="ui green ok inverted button">

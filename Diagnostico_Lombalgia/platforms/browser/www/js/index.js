@@ -39,6 +39,14 @@ var app = {
                 "background-size": "cover", 
                  "height": "100%"
                 });
+       
+        
+        $('#geral').visibility({
+   
+    onBottomVisible: function() {
+      
+    }
+  });
         
     },
 
@@ -55,6 +63,11 @@ var app = {
         //Verificar RedFlag
           $("#ayuda").click(function(){
         $('#redflag').modal('show')
+       });
+        
+         //Sobre
+          $("#sobre").click(function(){
+        $('#about').modal('show')
        });
         
         
@@ -361,7 +374,7 @@ var app = {
         
         //Mensagem de erro
         function erro(){
-             $("#diagnostico").html("<strong>Informações inconsistentes!</strong>");
+             $("#diagnostico").html("<strong>Informações inconsistentes!    </strong>");
             $("#tratamento").html("Dados inconsistentes com qualquer subclassificação, por favor, reavalie as características de mobilidade e testes de envolvimento do componente neurológico!");
         }
      
