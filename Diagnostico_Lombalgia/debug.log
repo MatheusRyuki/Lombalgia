@@ -58,3 +58,5 @@
 [0713/230157.225:ERROR:file_io_win.cc(179)] CreateFile C:\Users\Public\Documents\Google\Chrome\settings.dat: Acesso negado. (0x5)
 [0713/230157.233:ERROR:registration_protocol_win.cc(84)] TransactNamedPipe: O pipe foi finalizado. (0x6D)
 [0713/230157.234:ERROR:file_io_win.cc(179)] CreateFile C:\Users\Public\Documents\Google\Chrome\settings.dat: Acesso negado. (0x5)
+[0720/222750.695:ERROR:settings.cc(324)] Settings version is not 1
+[0720/223647.412:ERROR:settings.cc(324)] Settings version is not 1
