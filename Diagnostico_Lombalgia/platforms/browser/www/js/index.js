@@ -221,7 +221,7 @@ var app = {
                 } else if (localStorage.getItem('segundaEscolha') == 2) {
                       if (localStorage.getItem('terceiraEscolha') == 2){
                           if (localStorage.getItem('quartaEscolha') == 2){
-                               if (localStorage.getItem('quintaEscolha') == 2){
+                              if (localStorage.getItem('quintaEscolha') == 2){
                                  $("#tratamento").html("Exercícios específicos de estabilização segmentar e reeducação de movimentos fisiológicos ativos sintomáticos, para realização destes de forma assintomática nas amplitudes que vão da metade para o final do movimento. Podem ser utilizadas órteses restritivas para manter as estruturas lombossacrais em menor condição sintomática nas amplitudes de movimento que vão da metade para o final do movimento. Recomendações para cuidados domiciliares como posições de conforto e alívio da dor, transferências seguras, e recomendações para a manutenção de um estilo de vida ativo.");
                                    $("#diagnostico").html("Lombalgia aguda com diminuição da coordenação");
                                     localStorage.respostaCorreta = true;
@@ -289,10 +289,10 @@ var app = {
                           }
                      }
                  //Desfecho 10
-             } else if (localStorage.getItem('segundaEscolha') === 2){
-                     if (localStorage.getItem('terceiraEscolha') === 2){
-                          if (localStorage.getItem('quartaEscolha') === 2){
-                               if (localStorage.getItem('quintaEscolha') === 2){
+             } else if (localStorage.getItem('segundaEscolha') == 2){
+                     if (localStorage.getItem('terceiraEscolha') == 2){
+                          if (localStorage.getItem('quartaEscolha') == 2){
+                               if (localStorage.getItem('quintaEscolha') == 2){
                                     $("#diagnostico").html("Lombalgia subaguda com diminuição da coordenação");
                                    $("#tratamento").html("Reeducação neuromuscular do movimento para melhorar a estabilidade dinâmica com o objetivo de manter as estruturas lombopélvicas envolvidas em situação assintomática durante as atitudes que envolvam movimentos na metade da amplitude em atividades funcionais e de cuidados pessoais. Procedimentos de terapia manual e exercícios terapêuticos voltados para defícitis de mobilidade identificados na coluna torácica, costelas. Exercícios terapêuticos voltados para recuperar a força e resistência de músculos do tronco e da pelve. Auto cuidado e treino para manter a posição dos segmento envolvidos na metade da amplitude em situação menos sintomática. Estimular o início da reintegração social e ao trabalho com estratégias de controle da dor durante estas atividades.");
                                     localStorage.respostaCorreta = true;
@@ -363,9 +363,10 @@ var app = {
                      }
                 }
         }
-            if(localStorage.getItem('respostaCorreta') == false) {
+            if(localStorage.getItem('respostaCorreta') == "false") {
                 erro();
             }
+           
     }
         
         //Voltar ao ínicio
@@ -374,6 +375,8 @@ var app = {
               $("#seventh").fadeOut();
                $("#first").fadeIn();
             $("#setaIcon").show();
+             $("#diagnostico").html("");
+            $("#tratamento").html("");
         });
         
         //Mensagem de erro
