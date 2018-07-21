@@ -52,6 +52,7 @@ var app = {
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         
+       
           
         //Apresentação Clique
            $("#pri").click(function(){
@@ -75,6 +76,9 @@ var app = {
           $("#tela").fadeOut();
             $('#introducao').modal('show');  
            $("#second").fadeIn();  
+            
+              //Variavél de Verificação
+            localStorage.respostaCorreta = false;
        });
         
         //Escolha errada
@@ -203,10 +207,13 @@ var app = {
                                    //Desfecho 1
                                   $("#tratamento").html("Manipulação ou mobilização articular ou outra técnica que seja eficaz na melhora da dor e do movimento vertebral segmentar ou lombopélvico, exercícios terapêuticos para melhora ou manutenção da mobilidade espinhal, aconselhamento para que o paciente mantenha um estilo de vida ativo."); 
                                    $("#diagnostico").html("Lombalgia aguda com diminuição da mobilidade");
+                                   
+                                   localStorage.respostaCorreta = true;
                         //Desfecho 5
                             } else if (localStorage.getItem('quintaEscolha') == 1){
-                                   $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cogitivos");
+                                   $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cognitivos");
                                 $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
+                                 localStorage.respostaCorreta = true;
                             } 
                           }                       
                      } 
@@ -217,10 +224,12 @@ var app = {
                                if (localStorage.getItem('quintaEscolha') == 2){
                                  $("#tratamento").html("Exercícios específicos de estabilização segmentar e reeducação de movimentos fisiológicos ativos sintomáticos, para realização destes de forma assintomática nas amplitudes que vão da metade para o final do movimento. Podem ser utilizadas órteses restritivas para manter as estruturas lombossacrais em menor condição sintomática nas amplitudes de movimento que vão da metade para o final do movimento. Recomendações para cuidados domiciliares como posições de conforto e alívio da dor, transferências seguras, e recomendações para a manutenção de um estilo de vida ativo.");
                                    $("#diagnostico").html("Lombalgia aguda com diminuição da coordenação");
+                                    localStorage.respostaCorreta = true;
                                    //Desfecho 6
                             } else if (localStorage.getItem('quintaEscolha') == 1){
-                                     $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cogitivos");
+                                     $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cogn2itivos");
                                 $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
+                                 localStorage.respostaCorreta = true;
                     
                             } 
                           }
@@ -232,10 +241,12 @@ var app = {
                                if (localStorage.getItem('quintaEscolha') == 2){
                                   $("#tratamento").html("Exercícios terapêuticos, mobilizações articulares ou trações que promovam a centralização da dor e melhore o movimento de extensão lombar, orientações quanto a utilização de posicionamentos que promovem a centralização dos sintomas, progresso para intervenções consistentes com a dor subaguda ou estratégias de intervenção para dor lombar crônica com diminuição da coordenação do movimento. Progredir para intervenções consistentes com casos de lombalgia subaguda ou crônica com diminuição da coordenação dos movimentos."); 
                                 $("#diagnostico").html("Lombalgia aguda com dor referida para membros inferiores");
+                                   localStorage.respostaCorreta = true;
                                    //Desfecho 7
                             } else if (localStorage.getItem('quintaEscolha') == 1){
-                                 $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cogitivos");
+                                 $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cogn3itivos");
                                 $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
+                               localStorage.respostaCorreta = true;
                             } 
                             } 
                         }
@@ -247,11 +258,13 @@ var app = {
                                if (localStorage.getItem('quintaEscolha') == 2){
                                   $("#tratamento").html("Aconselhamento ao paciente para adoção de posições e posturas que diminuem a tensão e a compressão das raízes dos nervos envolvidos, tração manual ou mecânica, mobilização articular e/ou de tecidos moles adjacentes às raízes com déficits de mobilidade, mobilização neural em amplitude livre da dor para a melhora da mobilidade de elementos neurais centrais e periféricos."); 
                                    $("#diagnostico").html("Lombalgia aguda com dor irradiada");
+                                    localStorage.respostaCorreta = true;
                                    
                                    //Desfecho 8
                             } else if (localStorage.getItem('quintaEscolha') == 1){
-                                 $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cogitivos");
+                                 $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cogn4itivos");
                                 $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
+                                 localStorage.respostaCorreta = true;
                             }
                     
                           }
@@ -264,26 +277,30 @@ var app = {
                           if (localStorage.getItem('quartaEscolha') == 2){
                                if (localStorage.getItem('quintaEscolha') == 2){
                                     $("#diagnostico").html("Lombalgia subaguda com diminuição da mobilidade");
-                                   $("#tratamento").html("Foco na prevenção da lombalgia recorrente através de exercícios terapêuticos para reabilitação de prejuízos coexistentes na coordenação de movimento, diminuição da força muscular e/ou resistência bem como estimular o paciente a manter um estilo de vida ativo.")
+                                   $("#tratamento").html("Foco na prevenção da lombalgia recorrente através de exercícios terapêuticos para reabilitação de prejuízos coexistentes na coordenação de movimento, diminuição da força muscular e/ou resistência bem como estimular o paciente a manter um estilo de vida ativo.");
+                                    localStorage.respostaCorreta = true;
                                    
                                    //Desfecho 12
                                } else if (localStorage.getItem('quintaEscolha') == 1){
                                     $("#diagnostico").html("Lombalgia subaguda associada a distúrbios afetivos e/ou cognitivos");
                                    $("#tratamento").html("Educação do paciente e aconselhamento de encaminhamento ao psicólogo");
+                                   localStorage.respostaCorreta = true;
                                }
                           }
                      }
                  //Desfecho 10
-             } else if (localStorage.getItem('segundaEscolha') == 2){
-                     if (localStorage.getItem('terceiraEscolha') == 2){
-                          if (localStorage.getItem('quartaEscolha') == 2){
-                               if (localStorage.getItem('quintaEscolha') == 2){
+             } else if (localStorage.getItem('segundaEscolha') === 2){
+                     if (localStorage.getItem('terceiraEscolha') === 2){
+                          if (localStorage.getItem('quartaEscolha') === 2){
+                               if (localStorage.getItem('quintaEscolha') === 2){
                                     $("#diagnostico").html("Lombalgia subaguda com diminuição da coordenação");
-                                   $("#tratamento").html("Reeducação neuromuscular do movimento para melhorar a estabilidade dinâmica com o objetivo de manter as estruturas lombopélvicas envolvidas em situação assintomática durante as atitudes que envolvam movimentos na metade da amplitude em atividades funcionais e de cuidados pessoais. Procedimentos de terapia manual e exercícios terapêuticos voltados para defícitis de mobilidade identificados na coluna torácica, costelas. Exercícios terapêuticos voltados para recuperar a força e resistência de músculos do tronco e da pelve. Auto cuidado e treino para manter a posição dos segmento envolvidos na metade da amplitude em situação menos sintomática. Estimular o início da reintegração social e ao trabalho com estratégias de controle da dor durante estas atividades.")
+                                   $("#tratamento").html("Reeducação neuromuscular do movimento para melhorar a estabilidade dinâmica com o objetivo de manter as estruturas lombopélvicas envolvidas em situação assintomática durante as atitudes que envolvam movimentos na metade da amplitude em atividades funcionais e de cuidados pessoais. Procedimentos de terapia manual e exercícios terapêuticos voltados para defícitis de mobilidade identificados na coluna torácica, costelas. Exercícios terapêuticos voltados para recuperar a força e resistência de músculos do tronco e da pelve. Auto cuidado e treino para manter a posição dos segmento envolvidos na metade da amplitude em situação menos sintomática. Estimular o início da reintegração social e ao trabalho com estratégias de controle da dor durante estas atividades.");
+                                    localStorage.respostaCorreta = true;
                                    //Desfecho 13
                                } else if (localStorage.getItem('quintaEscolha') == 1){
                                     $("#diagnostico").html("Lombalgia subaguda associada a distúrbios afetivos e/ou cognitivos");
                                    $("#tratamento").html("Educação do paciente e aconselhamento de encaminhamento ao psicólogo");
+                                    localStorage.respostaCorreta = true;
                                }
                           }
                        
@@ -295,10 +312,12 @@ var app = {
                                if (localStorage.getItem('quintaEscolha') == 2){
                                     $("#diagnostico").html("Lombalgia subaguda com dor irradiada");
                                    $("#tratamento").html("Terapia manual para mobilizar as articulações e tecidos moles adjacentes ao nervo envolvido bem como os tecidos nervosos que exibiriem diminuição da Mobilidade. Tração Manual ou Mecânica. Mobilidade neural e exercícios de 'Slump' do meio para o fim da amplitude para melhorar a mobilidade dural e de nervos periféricos.");
+                                    localStorage.respostaCorreta = true;
                                //Desfecho 14
                                } else if (localStorage.getItem('quintaEscolha') == 1){
                                     $("#diagnostico").html("Lombalgia subaguda associada a distúrbios afetivos e/ou cognitivos");
                                    $("#tratamento").html("Educação do paciente e aconselhamento de encaminhamento ao psicólogo");
+                                   localStorage.respostaCorreta = true;
                                }
                           }
                         
@@ -311,7 +330,8 @@ var app = {
                           if (localStorage.getItem('quartaEscolha') == 2){
                                if (localStorage.getItem('quintaEscolha') == 2){
                                   $("#diagnostico").html("Lombalgia crônica com diminuição da coordenação do movimento");
-                                  $("#tratamento").html("Reeducação neuromuscular para melhorar a estabilidade dinâmica com o objetivo de manter as estruturas lombopélvicas envolvidas em situação assintomática em situações de cuidado pessoal na metade da amplitude de movimento em atividades funcionais, procedimentos de terapia manual e exercícios terapêuticos voltados para  déficits de mobilidade identificados na coluna torácica,  estimular o início da reintegração social e ao trabalho com estratégias de controle da dor durante estas atividades.")
+                                  $("#tratamento").html("Reeducação neuromuscular para melhorar a estabilidade dinâmica com o objetivo de manter as estruturas lombopélvicas envolvidas em situação assintomática em situações de cuidado pessoal na metade da amplitude de movimento em atividades funcionais, procedimentos de terapia manual e exercícios terapêuticos voltados para  déficits de mobilidade identificados na coluna torácica,  estimular o início da reintegração social e ao trabalho com estratégias de controle da dor durante estas atividades.");
+                                 localStorage.respostaCorreta = true;
                                }
                           }
                          
@@ -322,7 +342,8 @@ var app = {
                           if (localStorage.getItem('quartaEscolha') == 1){
                                if (localStorage.getItem('quintaEscolha') == 2){
                                  $("#diagnostico").html("Lombalgia crônica com dor irradiada");
-                                   $("#tratamento").html("Terapia manual e exercícios terapêuticos para a região tóracolombar e diminuição de mobilidade nervosa do quadrante inferior, educação para estratégias de manejo da dor.")
+                                   $("#tratamento").html("Terapia manual e exercícios terapêuticos para a região tóracolombar e diminuição de mobilidade nervosa do quadrante inferior, educação para estratégias de manejo da dor.");
+                                   localStorage.respostaCorreta = true;
                                }
                           }
                           
@@ -334,13 +355,15 @@ var app = {
                                if (localStorage.getItem('quintaEscolha') == 1){
                                   $("#diagnostico").html("Lombalgia crônica com dor generalizada");
                                     $("#tratamento").html("Educação do paciente e aconselhamento voltado para classificação específica do componente cognitivo envolvido(depressão, medo, catastrofização da dor, orientações para realização de exercícios aeróbicos prolongados de baixa intensidade.)");
+                                   localStorage.respostaCorreta = true;
+                                   
                                }
                           }
                           
                      }
                 }
         }
-            else {
+            if(localStorage.getItem('respostaCorreta') == false) {
                 erro();
             }
     }
