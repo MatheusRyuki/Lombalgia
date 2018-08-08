@@ -227,7 +227,7 @@ var app = {
                                     localStorage.respostaCorreta = true;
                                    //Desfecho 6
                             } else if (localStorage.getItem('quintaEscolha') == 1){
-                                     $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cogn2itivos");
+                                     $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cognitivos");
                                 $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
                                  localStorage.respostaCorreta = true;
                     
@@ -244,7 +244,7 @@ var app = {
                                    localStorage.respostaCorreta = true;
                                    //Desfecho 7
                             } else if (localStorage.getItem('quintaEscolha') == 1){
-                                 $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cogn3itivos");
+                                 $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cognitivos");
                                 $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
                                localStorage.respostaCorreta = true;
                             } 
@@ -262,7 +262,7 @@ var app = {
                                    
                                    //Desfecho 8
                             } else if (localStorage.getItem('quintaEscolha') == 1){
-                                 $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cogn4itivos");
+                                 $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cognitivos");
                                 $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
                                  localStorage.respostaCorreta = true;
                             }
@@ -311,7 +311,7 @@ var app = {
                           if (localStorage.getItem('quartaEscolha') == 1){
                                if (localStorage.getItem('quintaEscolha') == 2){
                                     $("#diagnostico").html("Lombalgia subaguda com dor irradiada");
-                                   $("#tratamento").html("Terapia manual para mobilizar as articulações e tecidos moles adjacentes ao nervo envolvido bem como os tecidos nervosos que exibiriem diminuição da Mobilidade. Tração Manual ou Mecânica. Mobilidade neural e exercícios de 'Slump' do meio para o fim da amplitude para melhorar a mobilidade dural e de nervos periféricos.");
+                                   $("#tratamento").html("Terapia manual para mobilizar as articulações e tecidos moles adjacentes ao nervo envolvido bem como os tecidos nervosos que exibirem diminuição da Mobilidade. Tração Manual ou Mecânica. Mobilidade neural e exercícios de 'Slump' do meio para o fim da amplitude para melhorar a mobilidade dural e de nervos periféricos.");
                                     localStorage.respostaCorreta = true;
                                //Desfecho 14
                                } else if (localStorage.getItem('quintaEscolha') == 1){
@@ -342,7 +342,7 @@ var app = {
                           if (localStorage.getItem('quartaEscolha') == 1){
                                if (localStorage.getItem('quintaEscolha') == 2){
                                  $("#diagnostico").html("Lombalgia crônica com dor irradiada");
-                                   $("#tratamento").html("Terapia manual e exercícios terapêuticos para a região tóracolombar e diminuição de mobilidade nervosa do quadrante inferior, educação para estratégias de manejo da dor.");
+                                   $("#tratamento").html("Terapia manual e exercícios terapêuticos para a região toracolombar e diminuição de mobilidade nervosa do quadrante inferior, educação para estratégias de manejo da dor.");
                                    localStorage.respostaCorreta = true;
                                }
                           }
