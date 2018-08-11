@@ -32,6 +32,7 @@ var app = {
          $("#third").hide();
         $("#thirdsec").hide();
         $("#fourth").hide();
+         $("#fourthsec").hide();
         $("#fifth").hide();
         $("#sixty").hide();
         $("#seventh").hide();
@@ -43,7 +44,7 @@ var app = {
        
         
       $(window).scroll(function() {   
-   if($(window).scrollTop() + $(window).height() > $(document).height() - 50) {
+   if($(window).scrollTop() + $(window).height() > $(document).height() - 70) {
        $("#setaIcon").hide();
    }
 }); 
@@ -138,25 +139,25 @@ var app = {
             $("#fourth").fadeIn();
         });
         
-          //Terceiro Clique - Caminho 1, Opções 1
+          //Terceiro Clique - Caminho 2, Opções 1
         $("#thi5").click(function(){
                $("#thirdsec").fadeOut();  
             localStorage.segundaEscolha = 1;
-            $("#fourth").fadeIn();
+            $("#fourthsec").fadeIn();
         });
         
-            //Terceiro Clique - Caminho 1, Opções 2
+            //Terceiro Clique - Caminho 2, Opções 2
         $("#thi6").click(function(){
                $("#thirdsec").fadeOut();  
             localStorage.segundaEscolha = 2;
-            $("#fourth").fadeIn();
+            $("#fourthsec").fadeIn();
         });
         
-            //Terceiro Clique - Caminho 1, Opções 3
+            //Terceiro Clique - Caminho 2, Opções 3
         $("#thi7").click(function(){
                $("#thirdsec").fadeOut();  
             localStorage.segundaEscolha = 3;
-            $("#fourth").fadeIn();
+            $("#fourthsec").fadeIn();
         });
         
              //Quarto Clique - Opções 1
@@ -184,6 +185,27 @@ var app = {
         $("#fou4").click(function(){
                $("#fourth").fadeOut();  
             localStorage.terceiraEscolha = 4;
+            $("#fifth").fadeIn();
+        });
+        
+           //Quarto Clique - Caminho 2, Opções 1
+        $("#fou5").click(function(){
+               $("#fourthsec").fadeOut(); 
+            localStorage.terceiraEscolha = 1;
+            $("#fifth").fadeIn();
+        });
+        
+             //Quarto Clique - Caminho 2, Opções 2
+        $("#fou6").click(function(){
+               $("#fourthsec").fadeOut(); 
+            localStorage.terceiraEscolha = 2;
+            $("#fifth").fadeIn();
+        });
+        
+             //Quarto Clique - Caminho 2, Opções 3
+        $("#fou7").click(function(){
+               $("#fourthsec").fadeOut(); 
+            localStorage.terceiraEscolha = 3;
             $("#fifth").fadeIn();
         });
         
