@@ -30,6 +30,7 @@ var app = {
         $("#tela").hide();
         $("#second").hide();
          $("#third").hide();
+        $("#thirdsec").hide();
         $("#fourth").hide();
         $("#fifth").hide();
         $("#sixty").hide();
@@ -99,7 +100,7 @@ var app = {
         $("#sec2").click(function(){
                $("#second").fadeOut();  
             localStorage.primeiraEscolha = 2;
-            $("#third").fadeIn();
+            $("#thirdsec").fadeIn();
         });
         
            //Segundo Clique - Opções 3
@@ -134,6 +135,27 @@ var app = {
         $("#thi4").click(function(){
                $("#third").fadeOut();  
             localStorage.segundaEscolha = 4;
+            $("#fourth").fadeIn();
+        });
+        
+          //Terceiro Clique - Caminho 1, Opções 1
+        $("#thi5").click(function(){
+               $("#thirdsec").fadeOut();  
+            localStorage.segundaEscolha = 1;
+            $("#fourth").fadeIn();
+        });
+        
+            //Terceiro Clique - Caminho 1, Opções 2
+        $("#thi6").click(function(){
+               $("#thirdsec").fadeOut();  
+            localStorage.segundaEscolha = 2;
+            $("#fourth").fadeIn();
+        });
+        
+            //Terceiro Clique - Caminho 1, Opções 3
+        $("#thi7").click(function(){
+               $("#thirdsec").fadeOut();  
+            localStorage.segundaEscolha = 3;
             $("#fourth").fadeIn();
         });
         
