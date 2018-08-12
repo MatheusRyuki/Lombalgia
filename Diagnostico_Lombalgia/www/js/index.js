@@ -34,6 +34,7 @@ var app = {
         $("#thirdthi").hide();
         $("#fourth").hide();
          $("#fourthsec").hide();
+        $("#fourththi").hide();
         $("#fifth").hide();
         $("#sixty").hide();
         $("#seventh").hide();
@@ -229,6 +230,30 @@ $(window).scroll(function() {
             localStorage.terceiraEscolha = 3;
             $("#fifth").fadeIn();
         });
+        
+        //Quarto Clique - Caminho 3, Opções 1
+        $("#fou8").click(function(){
+               $("#fourththi").fadeOut(); 
+            localStorage.terceiraEscolha = 1;
+            $("#fifth").fadeIn();
+        });
+        
+        //Quarto Clique - Caminho 3, Opções 2
+        $("#fou9").click(function(){
+               $("#fourththi").fadeOut(); 
+            localStorage.terceiraEscolha = 2;
+            $("#fifth").fadeIn();
+        });
+        
+        
+        //Quarto Clique - Caminho 3, Opções 3
+        $("#fou10").click(function(){
+               $("#fourththi").fadeOut(); 
+            localStorage.terceiraEscolha = 3;
+            $("#fifth").fadeIn();
+        });
+        
+        
         
             
              //Quinto Clique - Opções 1

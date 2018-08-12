@@ -31,8 +31,10 @@ var app = {
         $("#second").hide();
          $("#third").hide();
         $("#thirdsec").hide();
+        $("#thirdthi").hide();
         $("#fourth").hide();
          $("#fourthsec").hide();
+        $("#fourththi").hide();
         $("#fifth").hide();
         $("#sixty").hide();
         $("#seventh").hide();
@@ -43,13 +45,12 @@ var app = {
                 });
        
         
-      $(window).scroll(function() {   
-   if($(window).scrollTop() + $(window).height() > $(document).height() - 70) {
-       $("#setaIcon").hide();
-   }
-}); 
-        
-    },
+$(window).scroll(function() {   
+   if($(window).scrollTop() + $(window).height() >  $(document).height() - 50) {
+            $("#setaIcon").hide();
+        }
+    }); 
+},
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -108,7 +109,7 @@ var app = {
         $("#sec3").click(function(){
                $("#second").fadeOut();  
             localStorage.primeiraEscolha = 3;
-            $("#third").fadeIn();
+            $("#thirdthi").fadeIn();
         });
         
          //Terceiro Clique - Opções 1
@@ -160,6 +161,27 @@ var app = {
             $("#fourthsec").fadeIn();
         });
         
+           //Terceiro Clique - Caminho 3, Opções 1
+        $("#thi8").click(function(){
+               $("#thirdthi").fadeOut();  
+            localStorage.segundaEscolha = 1;
+            $("#fourththi").fadeIn();
+        });
+        
+           //Terceiro Clique - Caminho 3, Opções 2
+        $("#thi9").click(function(){
+               $("#thirdthi").fadeOut();  
+            localStorage.segundaEscolha = 2;
+            $("#fourththi").fadeIn();
+        });
+        
+           //Terceiro Clique - Caminho 3, Opções 3
+        $("#thi10").click(function(){
+               $("#thirdthi").fadeOut();  
+            localStorage.segundaEscolha = 3;
+            $("#fourththi").fadeIn();
+        });
+        
              //Quarto Clique - Opções 1
         $("#fou1").click(function(){
                $("#fourth").fadeOut(); 
@@ -208,6 +230,30 @@ var app = {
             localStorage.terceiraEscolha = 3;
             $("#fifth").fadeIn();
         });
+        
+        //Quarto Clique - Caminho 3, Opções 1
+        $("#fou8").click(function(){
+               $("#fourththi").fadeOut(); 
+            localStorage.terceiraEscolha = 1;
+            $("#fifth").fadeIn();
+        });
+        
+        //Quarto Clique - Caminho 3, Opções 2
+        $("#fou9").click(function(){
+               $("#fourththi").fadeOut(); 
+            localStorage.terceiraEscolha = 2;
+            $("#fifth").fadeIn();
+        });
+        
+        
+        //Quarto Clique - Caminho 3, Opções 3
+        $("#fou10").click(function(){
+               $("#fourththi").fadeOut(); 
+            localStorage.terceiraEscolha = 3;
+            $("#fifth").fadeIn();
+        });
+        
+        
         
             
              //Quinto Clique - Opções 1
