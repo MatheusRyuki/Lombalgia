@@ -302,7 +302,7 @@ $(window).scroll(function() {
                         //Desfecho 5
                             } else if (localStorage.getItem('quintaEscolha') == 1){
                                    $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cognitivos");
-                                $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
+                                $("#tratamento").html("Educação do paciente e aconselhamento voltado para classificação específica do componente cognitivo envolvido(depressão, medo, catastrofização da dor, orientações para realização de exercícios aeróbicos prolongados de baixa intensidade.)o");
                                  localStorage.respostaCorreta = true;
                             } 
                           }                       
@@ -318,7 +318,7 @@ $(window).scroll(function() {
                                    //Desfecho 6
                             } else if (localStorage.getItem('quintaEscolha') == 1){
                                      $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cognitivos");
-                                $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
+                                $("#tratamento").html("Educação do paciente e aconselhamento voltado para classificação específica do componente cognitivo envolvido(depressão, medo, catastrofização da dor, orientações para realização de exercícios aeróbicos prolongados de baixa intensidade.)");
                                  localStorage.respostaCorreta = true;
                     
                             } 
@@ -335,7 +335,7 @@ $(window).scroll(function() {
                                    //Desfecho 7
                             } else if (localStorage.getItem('quintaEscolha') == 1){
                                  $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cognitivos");
-                                $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
+                                $("#tratamento").html("Educação do paciente e aconselhamento voltado para classificação específica do componente cognitivo envolvido(depressão, medo, catastrofização da dor, orientações para realização de exercícios aeróbicos prolongados de baixa intensidade.)");
                                localStorage.respostaCorreta = true;
                             } 
                             } 
@@ -353,7 +353,7 @@ $(window).scroll(function() {
                                    //Desfecho 8
                             } else if (localStorage.getItem('quintaEscolha') == 1){
                                  $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cognitivos");
-                                $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
+                                $("#tratamento").html("Educação do paciente e aconselhamento voltado para classificação específica do componente cognitivo envolvido(depressão, medo, catastrofização da dor, orientações para realização de exercícios aeróbicos prolongados de baixa intensidade.)");
                                  localStorage.respostaCorreta = true;
                             }
                     
