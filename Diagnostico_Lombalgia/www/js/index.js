@@ -44,23 +44,26 @@ var app = {
                  "height": "100%"
                 });
        
-        
-$(window).scroll(function() {   
-   if($(window).scrollTop() + $(window).height() >  $(document).height() - 50) {
-            $("#setaIcon").hide();
-        }
-    }); 
+
+
 },
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
+   
         
-       
-          
+        //Função verificar scrollagem
+        $(window).scroll(function(){
+        if($(window).scrollTop() == $(document).height() - $(window).height()){
+          $(".arrow bounce").hide();
+    }
+});
+        
         //Apresentação Clique
            $("#pri").click(function(){
           $("#first").fadeOut(); 
-            $("#tela").fadeIn();  
+            $("#tela").fadeIn(); 
+              $(".arrow bounce").fadeIn();
        });
         
         //Verificar RedFlag
@@ -117,6 +120,7 @@ $(window).scroll(function() {
                $("#third").fadeOut(); 
             localStorage.segundaEscolha = 1;
             $("#fourth").fadeIn();
+            localStorage.flag = true;
         });
         
            //Terceiro Clique - Opções 2
@@ -124,6 +128,7 @@ $(window).scroll(function() {
                $("#third").fadeOut();  
             localStorage.segundaEscolha = 2;
             $("#fourth").fadeIn();
+            localStorage.flag = true;
         });
         
            //Terceiro Clique - Opções 3
@@ -131,6 +136,7 @@ $(window).scroll(function() {
                $("#third").fadeOut();  
             localStorage.segundaEscolha = 3;
             $("#fourth").fadeIn();
+             localStorage.flag = true;
         });
         
           //Terceiro Clique - Opções 4
@@ -138,6 +144,7 @@ $(window).scroll(function() {
                $("#third").fadeOut();  
             localStorage.segundaEscolha = 4;
             $("#fourth").fadeIn();
+             localStorage.flag = true;
         });
         
           //Terceiro Clique - Caminho 2, Opções 1
@@ -145,6 +152,7 @@ $(window).scroll(function() {
                $("#thirdsec").fadeOut();  
             localStorage.segundaEscolha = 1;
             $("#fourthsec").fadeIn();
+             localStorage.flag = true;
         });
         
             //Terceiro Clique - Caminho 2, Opções 2
@@ -152,6 +160,7 @@ $(window).scroll(function() {
                $("#thirdsec").fadeOut();  
             localStorage.segundaEscolha = 2;
             $("#fourthsec").fadeIn();
+             localStorage.flag = true;
         });
         
             //Terceiro Clique - Caminho 2, Opções 3
@@ -159,6 +168,7 @@ $(window).scroll(function() {
                $("#thirdsec").fadeOut();  
             localStorage.segundaEscolha = 3;
             $("#fourthsec").fadeIn();
+             localStorage.flag = true;
         });
         
            //Terceiro Clique - Caminho 3, Opções 1
@@ -166,6 +176,7 @@ $(window).scroll(function() {
                $("#thirdthi").fadeOut();  
             localStorage.segundaEscolha = 1;
             $("#fourththi").fadeIn();
+             localStorage.flag = true;
         });
         
            //Terceiro Clique - Caminho 3, Opções 2
@@ -173,6 +184,7 @@ $(window).scroll(function() {
                $("#thirdthi").fadeOut();  
             localStorage.segundaEscolha = 2;
             $("#fourththi").fadeIn();
+             localStorage.flag = true;
         });
         
            //Terceiro Clique - Caminho 3, Opções 3
@@ -180,6 +192,7 @@ $(window).scroll(function() {
                $("#thirdthi").fadeOut();  
             localStorage.segundaEscolha = 3;
             $("#fourththi").fadeIn();
+             localStorage.flag = true;
         });
         
              //Quarto Clique - Opções 1

@@ -45,10 +45,13 @@ var app = {
                 });
        
         
-$(window).scroll(function() {   
-   if($(window).scrollTop() + $(window).height() >  $(document).height() - 50) {
-            $("#setaIcon").hide();
-        }
+$(window).scroll(function() {  
+    if(bandeira == true) {
+  var scrollHeight = $(document).height();
+	var scrollPosition = $(window).height() + $(window).scrollTop();
+	if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+	      $("#setaIcon").hide(); 
+        }}
     }); 
 },
 
@@ -117,6 +120,7 @@ $(window).scroll(function() {
                $("#third").fadeOut(); 
             localStorage.segundaEscolha = 1;
             $("#fourth").fadeIn();
+            bandeira == true;
         });
         
            //Terceiro Clique - Opções 2
@@ -124,6 +128,7 @@ $(window).scroll(function() {
                $("#third").fadeOut();  
             localStorage.segundaEscolha = 2;
             $("#fourth").fadeIn();
+            bandeira == true;
         });
         
            //Terceiro Clique - Opções 3
@@ -131,6 +136,7 @@ $(window).scroll(function() {
                $("#third").fadeOut();  
             localStorage.segundaEscolha = 3;
             $("#fourth").fadeIn();
+            bandeira == true;
         });
         
           //Terceiro Clique - Opções 4
@@ -138,6 +144,7 @@ $(window).scroll(function() {
                $("#third").fadeOut();  
             localStorage.segundaEscolha = 4;
             $("#fourth").fadeIn();
+            bandeira == true;
         });
         
           //Terceiro Clique - Caminho 2, Opções 1
@@ -145,6 +152,7 @@ $(window).scroll(function() {
                $("#thirdsec").fadeOut();  
             localStorage.segundaEscolha = 1;
             $("#fourthsec").fadeIn();
+            bandeira == true;
         });
         
             //Terceiro Clique - Caminho 2, Opções 2
@@ -152,6 +160,7 @@ $(window).scroll(function() {
                $("#thirdsec").fadeOut();  
             localStorage.segundaEscolha = 2;
             $("#fourthsec").fadeIn();
+            bandeira == true;
         });
         
             //Terceiro Clique - Caminho 2, Opções 3
@@ -159,6 +168,7 @@ $(window).scroll(function() {
                $("#thirdsec").fadeOut();  
             localStorage.segundaEscolha = 3;
             $("#fourthsec").fadeIn();
+            bandeira == true;
         });
         
            //Terceiro Clique - Caminho 3, Opções 1
@@ -166,6 +176,7 @@ $(window).scroll(function() {
                $("#thirdthi").fadeOut();  
             localStorage.segundaEscolha = 1;
             $("#fourththi").fadeIn();
+            bandeira == true;
         });
         
            //Terceiro Clique - Caminho 3, Opções 2
@@ -173,6 +184,7 @@ $(window).scroll(function() {
                $("#thirdthi").fadeOut();  
             localStorage.segundaEscolha = 2;
             $("#fourththi").fadeIn();
+            bandeira == true;
         });
         
            //Terceiro Clique - Caminho 3, Opções 3
@@ -180,6 +192,7 @@ $(window).scroll(function() {
                $("#thirdthi").fadeOut();  
             localStorage.segundaEscolha = 3;
             $("#fourththi").fadeIn();
+            bandeira == true;
         });
         
              //Quarto Clique - Opções 1
@@ -302,7 +315,7 @@ $(window).scroll(function() {
                         //Desfecho 5
                             } else if (localStorage.getItem('quintaEscolha') == 1){
                                    $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cognitivos");
-                                $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
+                                $("#tratamento").html("Educação do paciente e aconselhamento voltado para classificação específica do componente cognitivo envolvido(depressão, medo, catastrofização da dor, orientações para realização de exercícios aeróbicos prolongados de baixa intensidade.)o");
                                  localStorage.respostaCorreta = true;
                             } 
                           }                       
@@ -318,7 +331,7 @@ $(window).scroll(function() {
                                    //Desfecho 6
                             } else if (localStorage.getItem('quintaEscolha') == 1){
                                      $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cognitivos");
-                                $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
+                                $("#tratamento").html("Educação do paciente e aconselhamento voltado para classificação específica do componente cognitivo envolvido(depressão, medo, catastrofização da dor, orientações para realização de exercícios aeróbicos prolongados de baixa intensidade.)");
                                  localStorage.respostaCorreta = true;
                     
                             } 
@@ -335,7 +348,7 @@ $(window).scroll(function() {
                                    //Desfecho 7
                             } else if (localStorage.getItem('quintaEscolha') == 1){
                                  $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cognitivos");
-                                $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
+                                $("#tratamento").html("Educação do paciente e aconselhamento voltado para classificação específica do componente cognitivo envolvido(depressão, medo, catastrofização da dor, orientações para realização de exercícios aeróbicos prolongados de baixa intensidade.)");
                                localStorage.respostaCorreta = true;
                             } 
                             } 
@@ -353,7 +366,7 @@ $(window).scroll(function() {
                                    //Desfecho 8
                             } else if (localStorage.getItem('quintaEscolha') == 1){
                                  $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cognitivos");
-                                $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
+                                $("#tratamento").html("Educação do paciente e aconselhamento voltado para classificação específica do componente cognitivo envolvido(depressão, medo, catastrofização da dor, orientações para realização de exercícios aeróbicos prolongados de baixa intensidade.)");
                                  localStorage.respostaCorreta = true;
                             }
                     

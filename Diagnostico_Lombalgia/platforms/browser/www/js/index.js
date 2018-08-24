@@ -30,7 +30,11 @@ var app = {
         $("#tela").hide();
         $("#second").hide();
          $("#third").hide();
+        $("#thirdsec").hide();
+        $("#thirdthi").hide();
         $("#fourth").hide();
+         $("#fourthsec").hide();
+        $("#fourththi").hide();
         $("#fifth").hide();
         $("#sixty").hide();
         $("#seventh").hide();
@@ -40,24 +44,26 @@ var app = {
                  "height": "100%"
                 });
        
-        
-      $(window).scroll(function() {   
-   if($(window).scrollTop() + $(window).height() > $(document).height() - 50) {
-       $("#setaIcon").hide();
-   }
-}); 
-        
-    },
+
+
+},
 
     // Update DOM on a Received Event
     receivedEvent: function(id) {
+   
         
-       
-          
+        //Função verificar scrollagem
+        $(window).scroll(function(){
+        if($(window).scrollTop() == $(document).height() - $(window).height()){
+          $(".arrow bounce").hide();
+    }
+});
+        
         //Apresentação Clique
            $("#pri").click(function(){
           $("#first").fadeOut(); 
-            $("#tela").fadeIn();  
+            $("#tela").fadeIn(); 
+              $(".arrow bounce").fadeIn();
        });
         
         //Verificar RedFlag
@@ -99,14 +105,14 @@ var app = {
         $("#sec2").click(function(){
                $("#second").fadeOut();  
             localStorage.primeiraEscolha = 2;
-            $("#third").fadeIn();
+            $("#thirdsec").fadeIn();
         });
         
            //Segundo Clique - Opções 3
         $("#sec3").click(function(){
                $("#second").fadeOut();  
             localStorage.primeiraEscolha = 3;
-            $("#third").fadeIn();
+            $("#thirdthi").fadeIn();
         });
         
          //Terceiro Clique - Opções 1
@@ -114,6 +120,7 @@ var app = {
                $("#third").fadeOut(); 
             localStorage.segundaEscolha = 1;
             $("#fourth").fadeIn();
+            localStorage.flag = true;
         });
         
            //Terceiro Clique - Opções 2
@@ -121,6 +128,7 @@ var app = {
                $("#third").fadeOut();  
             localStorage.segundaEscolha = 2;
             $("#fourth").fadeIn();
+            localStorage.flag = true;
         });
         
            //Terceiro Clique - Opções 3
@@ -128,6 +136,7 @@ var app = {
                $("#third").fadeOut();  
             localStorage.segundaEscolha = 3;
             $("#fourth").fadeIn();
+             localStorage.flag = true;
         });
         
           //Terceiro Clique - Opções 4
@@ -135,6 +144,55 @@ var app = {
                $("#third").fadeOut();  
             localStorage.segundaEscolha = 4;
             $("#fourth").fadeIn();
+             localStorage.flag = true;
+        });
+        
+          //Terceiro Clique - Caminho 2, Opções 1
+        $("#thi5").click(function(){
+               $("#thirdsec").fadeOut();  
+            localStorage.segundaEscolha = 1;
+            $("#fourthsec").fadeIn();
+             localStorage.flag = true;
+        });
+        
+            //Terceiro Clique - Caminho 2, Opções 2
+        $("#thi6").click(function(){
+               $("#thirdsec").fadeOut();  
+            localStorage.segundaEscolha = 2;
+            $("#fourthsec").fadeIn();
+             localStorage.flag = true;
+        });
+        
+            //Terceiro Clique - Caminho 2, Opções 3
+        $("#thi7").click(function(){
+               $("#thirdsec").fadeOut();  
+            localStorage.segundaEscolha = 3;
+            $("#fourthsec").fadeIn();
+             localStorage.flag = true;
+        });
+        
+           //Terceiro Clique - Caminho 3, Opções 1
+        $("#thi8").click(function(){
+               $("#thirdthi").fadeOut();  
+            localStorage.segundaEscolha = 1;
+            $("#fourththi").fadeIn();
+             localStorage.flag = true;
+        });
+        
+           //Terceiro Clique - Caminho 3, Opções 2
+        $("#thi9").click(function(){
+               $("#thirdthi").fadeOut();  
+            localStorage.segundaEscolha = 2;
+            $("#fourththi").fadeIn();
+             localStorage.flag = true;
+        });
+        
+           //Terceiro Clique - Caminho 3, Opções 3
+        $("#thi10").click(function(){
+               $("#thirdthi").fadeOut();  
+            localStorage.segundaEscolha = 3;
+            $("#fourththi").fadeIn();
+             localStorage.flag = true;
         });
         
              //Quarto Clique - Opções 1
@@ -164,6 +222,51 @@ var app = {
             localStorage.terceiraEscolha = 4;
             $("#fifth").fadeIn();
         });
+        
+           //Quarto Clique - Caminho 2, Opções 1
+        $("#fou5").click(function(){
+               $("#fourthsec").fadeOut(); 
+            localStorage.terceiraEscolha = 1;
+            $("#fifth").fadeIn();
+        });
+        
+             //Quarto Clique - Caminho 2, Opções 2
+        $("#fou6").click(function(){
+               $("#fourthsec").fadeOut(); 
+            localStorage.terceiraEscolha = 2;
+            $("#fifth").fadeIn();
+        });
+        
+             //Quarto Clique - Caminho 2, Opções 3
+        $("#fou7").click(function(){
+               $("#fourthsec").fadeOut(); 
+            localStorage.terceiraEscolha = 3;
+            $("#fifth").fadeIn();
+        });
+        
+        //Quarto Clique - Caminho 3, Opções 1
+        $("#fou8").click(function(){
+               $("#fourththi").fadeOut(); 
+            localStorage.terceiraEscolha = 1;
+            $("#fifth").fadeIn();
+        });
+        
+        //Quarto Clique - Caminho 3, Opções 2
+        $("#fou9").click(function(){
+               $("#fourththi").fadeOut(); 
+            localStorage.terceiraEscolha = 2;
+            $("#fifth").fadeIn();
+        });
+        
+        
+        //Quarto Clique - Caminho 3, Opções 3
+        $("#fou10").click(function(){
+               $("#fourththi").fadeOut(); 
+            localStorage.terceiraEscolha = 3;
+            $("#fifth").fadeIn();
+        });
+        
+        
         
             
              //Quinto Clique - Opções 1
@@ -212,7 +315,7 @@ var app = {
                         //Desfecho 5
                             } else if (localStorage.getItem('quintaEscolha') == 1){
                                    $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cognitivos");
-                                $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
+                                $("#tratamento").html("Educação do paciente e aconselhamento voltado para classificação específica do componente cognitivo envolvido(depressão, medo, catastrofização da dor, orientações para realização de exercícios aeróbicos prolongados de baixa intensidade.)o");
                                  localStorage.respostaCorreta = true;
                             } 
                           }                       
@@ -227,8 +330,8 @@ var app = {
                                     localStorage.respostaCorreta = true;
                                    //Desfecho 6
                             } else if (localStorage.getItem('quintaEscolha') == 1){
-                                     $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cogn2itivos");
-                                $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
+                                     $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cognitivos");
+                                $("#tratamento").html("Educação do paciente e aconselhamento voltado para classificação específica do componente cognitivo envolvido(depressão, medo, catastrofização da dor, orientações para realização de exercícios aeróbicos prolongados de baixa intensidade.)");
                                  localStorage.respostaCorreta = true;
                     
                             } 
@@ -244,8 +347,8 @@ var app = {
                                    localStorage.respostaCorreta = true;
                                    //Desfecho 7
                             } else if (localStorage.getItem('quintaEscolha') == 1){
-                                 $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cogn3itivos");
-                                $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
+                                 $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cognitivos");
+                                $("#tratamento").html("Educação do paciente e aconselhamento voltado para classificação específica do componente cognitivo envolvido(depressão, medo, catastrofização da dor, orientações para realização de exercícios aeróbicos prolongados de baixa intensidade.)");
                                localStorage.respostaCorreta = true;
                             } 
                             } 
@@ -262,8 +365,8 @@ var app = {
                                    
                                    //Desfecho 8
                             } else if (localStorage.getItem('quintaEscolha') == 1){
-                                 $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cogn4itivos");
-                                $("#tratamento").html("Educação e encaminhamento específico para o estado cognitivo apresentado pelo paciente, isto é, depressão, medo e catastrofização");
+                                 $("#diagnostico").html("Lombalgia aguda associada a distúrbios afetivos e/ou cognitivos");
+                                $("#tratamento").html("Educação do paciente e aconselhamento voltado para classificação específica do componente cognitivo envolvido(depressão, medo, catastrofização da dor, orientações para realização de exercícios aeróbicos prolongados de baixa intensidade.)");
                                  localStorage.respostaCorreta = true;
                             }
                     
@@ -311,7 +414,7 @@ var app = {
                           if (localStorage.getItem('quartaEscolha') == 1){
                                if (localStorage.getItem('quintaEscolha') == 2){
                                     $("#diagnostico").html("Lombalgia subaguda com dor irradiada");
-                                   $("#tratamento").html("Terapia manual para mobilizar as articulações e tecidos moles adjacentes ao nervo envolvido bem como os tecidos nervosos que exibiriem diminuição da Mobilidade. Tração Manual ou Mecânica. Mobilidade neural e exercícios de 'Slump' do meio para o fim da amplitude para melhorar a mobilidade dural e de nervos periféricos.");
+                                   $("#tratamento").html("Terapia manual para mobilizar as articulações e tecidos moles adjacentes ao nervo envolvido bem como os tecidos nervosos que exibirem diminuição da Mobilidade. Tração Manual ou Mecânica. Mobilidade neural e exercícios de 'Slump' do meio para o fim da amplitude para melhorar a mobilidade dural e de nervos periféricos.");
                                     localStorage.respostaCorreta = true;
                                //Desfecho 14
                                } else if (localStorage.getItem('quintaEscolha') == 1){
@@ -342,7 +445,7 @@ var app = {
                           if (localStorage.getItem('quartaEscolha') == 1){
                                if (localStorage.getItem('quintaEscolha') == 2){
                                  $("#diagnostico").html("Lombalgia crônica com dor irradiada");
-                                   $("#tratamento").html("Terapia manual e exercícios terapêuticos para a região tóracolombar e diminuição de mobilidade nervosa do quadrante inferior, educação para estratégias de manejo da dor.");
+                                   $("#tratamento").html("Terapia manual e exercícios terapêuticos para a região toracolombar e diminuição de mobilidade nervosa do quadrante inferior, educação para estratégias de manejo da dor.");
                                    localStorage.respostaCorreta = true;
                                }
                           }

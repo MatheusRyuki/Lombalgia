@@ -40,14 +40,74 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+                text-align: justify;
             }
-            #setaIcon {
-                position: fixed;
-                margin-top: 90%;
-                margin-left: 80%;
-            }
- 
+          
+            
+            .testbutton{
+    -moz-box-shadow: 0px 10px 14px -7px #276873;
+	-webkit-box-shadow: 0px 10px 14px -7px #276873;
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
+	background:-moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-o-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:-ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+	background-color:#599bb3;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+
+            .testbutton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
+	background:-moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-o-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:-ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3',GradientType=0);
+	background-color:#408c99;
+}
+.testbutton:active {
+	position:relative;
+	top:1px;
+}
+            .setaIcone{
+                margin: auto;
+            }   
+ .arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
 
         </style>
        
@@ -61,8 +121,13 @@
             
             <!-- Primeira Instância -->
             <div id="first" class="ui segment">
+                <div class="ui basic segment">
+                <img class="ui mini avatar image" src="img/brasaouepa.png">
+                <img class="ui mini avatar right floated image" src="img/UFPA.png">
+                </div>
+                
                 <img class="ui centered small image" src="img/logo.png">
-                <h1 class="ui center aligned header">Diagnóstico de Lombalgia</h1>
+                <h1 class="ui center aligned header">LBP Screening</h1>
                 <button id="pri" class="ui primary button" style="margin-left: 30%">Comece aqui!</button> 
                 <button id="sobre" class="ui secondary button" style="margin-left: 25%; margin-top: 5%">Sobre o Aplicativo</button>  
         </div>
@@ -72,9 +137,9 @@
             <h3 class="ui top attached center aligned header" style="margin-top: 5%;">
   Duração da Dor Lombar
             </h3>
-            <div id="sec1" class="ui justified aligned secondary button" style="margin-top: 15%;">Dor Lombar com tempo inferior a um mês de duração.</div>
-            <div id="sec2" class="ui secondary button"  style="margin-top: 15%;">Dor Lombar com tempo superior a um mês e inferior a três meses de duração.</div>
-                <div id="sec3" class="ui secondary button"  style="margin-top: 15%;">Dor Lombar com tempo superior a três meses de duração.</div>
+            <div id="sec1" class="testbutton" style="margin-top: 15%;">Dor Lombar com tempo inferior a um mês de duração.</div>
+            <div id="sec2" class="testbutton"  style="margin-top: 15%;">Dor Lombar com tempo superior a um mês e inferior a três meses de duração.</div>
+                <div id="sec3" class="testbutton"  style="margin-top: 15%;">Dor Lombar com tempo superior a três meses de duração.</div>
              
         
         </div>   
@@ -84,28 +149,87 @@
              <h3 class="ui top attached center aligned header" style="margin-top: 5%;">
                 Caracterização da Dor 
             </h3>
-            <div id="thi1" class="ui secondary button" style="margin-top: 10%;">Dor na região lombar, e/ou nas nádegas e/ou coxa, com distribuição unilateral. O surgimento dos sintomas está associado a um movimento abrupto descuidado ou a um mal posicionamento mantido.</div>
-            <div id="thi2" class="ui secondary button"  style="margin-top: 10%;">Exacerbação aguda da lombalgia que vem sendo recorrente nos últimos anos. Está comumente associada à dor referida na extremidade inferior.</div>
-                <div id="thi3" class="ui secondary button"  style="margin-top: 10%;">Lombalgia comumente associada com dor referida na nádega, coxa ou perna. A dor piora com atividade de flexão de tronco ou posição sentada.</div>
-             <div id="thi4" class="ui secondary button"  style="margin-top: 10%;">Lombalgia com dor irradiada(normalmente de forma lancinante e em faixa) para o membro inferior envolvido. Parestesias, dormências e fraqueza muscular na extremidade inferior podem estar presentes.</div>
+            <div id="thi1" class="testbutton"style="margin-top: 15%;">Dor na região lombar, e/ou nas nádegas e/ou coxa, com distribuição unilateral. O surgimento dos sintomas está associado a um movimento abrupto descuidado ou a um mal posicionamento mantido.</div>
+            <div id="thi2" class="testbutton"  style="margin-top: 15%;">Exacerbação aguda da lombalgia que vem sendo recorrente nos últimos anos. Está comumente associada à dor referida na extremidade inferior.</div>
+                <div id="thi3" class="testbutton"  style="margin-top: 10%;">Lombalgia comumente associada com dor referida na nádega, coxa ou perna. A dor piora com atividade de flexão de tronco ou posição sentada.</div>
+             <div id="thi4" class="testbutton" style="margin-top: 10%;">Lombalgia com dor irradiada(normalmente de forma lancinante e em faixa) para o membro inferior envolvido. Parestesias, dormências e fraqueza muscular na extremidade inferior podem estar presentes.</div>
         </div>
-                       
+            
+            <!--Terceira Instância, Segundo Caminho-->
+            <div id="thirdsec">
+             <h3 class="ui top attached center aligned header" style="margin-top: 5%;">
+                Caracterização da Dor 
+            </h3>
+            <div id="thi5" class="testbutton" style="margin-top: 15%;">Dor lombar subaguda unilateral, com dor nas nadégas ou coxa. O paciente pode relatar possível sensação de rigidez na coluna lombar.</div>
+            <div id="thi6" class="testbutton"  style="margin-top: 15%;">Dor lombar subaguda recorrente, que é comumente associada com dor referida no membro inferior. Sintomas que frequentemente incluem vários episódios de dor na extremidade inferior nos últimos anos.</div>
+                <div id="thi7" class="testbutton"  style="margin-top: 15%;">Dor subaguda recorrente no meio das costas ou na região lombar associada a dor irradiada para o membro inferior envolvido. Pode haver relatos de parestesias, hipoestesias e fraqueza muscular.</div>
+        </div>
+            
+        <!--Terceira Instância, Terceiro Caminho-->
+        <div id="thirdthi">
+             <h3 class="ui top attached center aligned header" style="margin-top: 5%;">
+                Caracterização da Dor 
+            </h3>
+            <div id="thi8" class="testbutton" style="margin-top: 15%;">Dor lombar crônica recorrente associada a dor referida em membro inferior.</div>
+            <div id="thi9" class="testbutton"  style="margin-top: 15%;">Dor Lombotorárica e/ou lombalgia crônica com dor irradiada para o membro. O membro inferior envolvido pode apresentar parestesia, hipoestesia e fraqueza muscular.</div>
+                <div id="thi10" class="testbutton"  style="margin-top: 15%;">Dor lombar associada com dor generalizada.</div>
+        </div>
+            
+            
+            
      <!-- Quarta Instância -->
         <div id="fourth">
             
               <h3 class="ui top attached center aligned header" style="margin-top: 5%;">
                 Caracterização da Mobilidade
             </h3>
-            <img id="setaIcon" class="ui mini circular image" src="img/seta.png">
-            <div id="fou1" class="ui secondary button" style="margin-top: 10%;">Região da coluna torácica, ou lombar, ou sacroilíaca, com restrições segmentares de movimento. Apresenta reprodução de sintomas dolorosos aos testes provocativos de mobilidade da coluna torácica baixa, lombar ou sacroilíaca.</div>
+            <div class="arrow bounce">
+                 <img class="ui mini circular image setaIcone" src="img/seta.png">
+            </div>
+            <div id="fou1" class="testbutton" style="margin-top: 10%;">Região da coluna torácica, ou lombar, ou sacroilíaca, com restrições segmentares de movimento. Apresenta reprodução de sintomas dolorosos aos testes provocativos de mobilidade da coluna torácica baixa, lombar ou sacroilíaca.</div>
               
-            <div id="fou2" class="ui secondary button"  style="margin-top: 10%;">Sintomas dolorosos relatados ao repouso ou na primeira metade dos movimentos da coluna lombar. Apresenta reprodução de sintomas dolorosos aos testes provocativos de mobilidade da coluna torácica baixa,  lombar, ou sacroiliaca. Comprometimento da coordenação do movimento na região lombopélvica aos movimentos de flexão e extensão (Instabilidade segmentar lombar)</div>
+            <div id="fou2" class="testbutton"  style="margin-top: 10%;">Sintomas dolorosos relatados ao repouso ou na primeira metade dos movimentos da coluna lombar. Apresenta reprodução de sintomas dolorosos aos testes provocativos de mobilidade da coluna torácica baixa,  lombar, ou sacroilíaca. Comprometimento da coordenação do movimento na região lombopélvica aos movimentos de flexão e extensão (Instabilidade segmentar lombar)</div>
                
-                <div id="fou3" class="ui secondary button"  style="margin-top: 10%;">Lombalgia ou dor no membro inferior que podem ser centralizadas ou diminuídas com posturas específicas ou movimentos repetidos. Lordose lombar reduzida (Síndrome de flatback), mobilidade da extensão lombar reduzida. O desvio lateral do tronco pode estar presente (Desarranjo segmentar discal). Instabilidade segmentar lombar.</div>
+                <div id="fou3" class="testbutton"  style="margin-top: 10%;">Lombalgia ou dor no membro inferior que podem ser centralizadas ou diminuídas com posturas específicas ou movimentos repetidos. Lordose lombar reduzida (Síndrome de flatback), mobilidade da extensão lombar reduzida. O desvio lateral do tronco pode estar presente (Desarranjo segmentar discal). Instabilidade segmentar lombar.</div>
               
-             <div id="fou4" class="ui secondary button"  style="margin-top: 10%;">Reprodução ou agravamento da dor e de sintomas radiculares em repouso ou na primeira metade da amplitude dos movimentos da coluna.</div>
+             <div id="fou4" class="testbutton"  style="margin-top: 10%;">Reprodução ou agravamento da dor e de sintomas radiculares em repouso ou na primeira metade da amplitude dos movimentos da coluna.</div>
               
         </div>
+            
+            <!-- Quarta Instância, Segundo Caminho -->
+        <div id="fourthsec">
+            
+              <h3 class="ui top attached center aligned header" style="margin-top: 5%;">
+                Caracterização da Mobilidade
+            </h3>
+            <div class="arrow bounce">
+                 <img id="setaIcon" class="ui mini circular image setaIcone" src="img/seta.png">
+            </div>
+            <div id="fou5" class="testbutton" style="margin-top: 15%;">Os Sintomas são reproduzidos no final dos movimentos da coluna vertebral. Testes provocativos reproduzem sintomas nas regiões torácica baixa, lombar ou sacroilíaca quando envolvidas. Presença de um ou mais dos seguintes sinais: restrição de amplitude de movimento da coluna torácica e/ou lombar associada ao comprometimento da mobilidade segmentar, movimentos lombopélvicos ou do quadril limitados associados ao comprometimento da mobilidade acessória.</div>
+              
+            <div id="fou6" class="testbutton"  style="margin-top: 15%;">Dor lombossacral que inicia na segunda metade do movimento piorando ao final da amplitude ou posições. Lombalgia ou lombalgia associada com dor referida no membro inferior reproduzida com testes provocativos para os segmentos lombares. Hipermobilidade segmentar lombar pode estar presente. Deficits de mobilidade das regiões torácica, lombopélvica ou quadril. Diminuição de força ou resistência muscular do tronco ou região lombopélvica, com diminuição da coordenação dos movimentos em AVDs (Instabilidade segmentar lombar).</div>
+               
+                <div id="fou7" class="testbutton"  style="margin-top: 15%;">Dor toracolombar, lombalgia e dor irradiada ou parestesias que são reproduzidas no início da segunda metade da amplitude do movimento que pioram ao final do movimento da coluna lombar. Pode estar associada a diminuição da sensibilidade, força muscular e hiporeflexia do membro inferior envolvido.</div>
+            
+               </div>
+            
+             <!-- Quarta Instância, Terceiro Caminho -->
+        <div id="fourththi">
+            
+              <h3 class="ui top attached center aligned header" style="margin-top: 5%;">
+                Caracterização da Mobilidade
+            </h3>
+            
+           <div class="arrow bounce">
+                 <img class="ui mini circular image setaIcone" src="img/seta.png">
+            </div>
+            <div id="fou8" class="testbutton" style="margin-top: 15%;">Presença de um ou mais dos achados a seguir: Lombalgia ou lombalgia com dor referida em membro inferior que piora na amplitude final sustentada do movi
+                mento ou posições, hipermobilidade segmentar lombar, diminuição da mobilidade de regiões torácica e lombopélvica, força e resistência muscular diminuida nas regiões do tronco e pelve (Instabilidade segmentar lombar), coordenação diminuída quando realiza atividades da vida cotidiana.</div>
+            <div id="fou9" class="testbutton"  style="margin-top: 15%;">Dor lombossacral que inicia na segunda metade do movimento piorando ao final da amplitude ou posições. Lombalgia ou lombalgia associada com dor referida no membro inferior reproduzida com testes provocativos para os segmentos lombares. Hipermobilidade segmentar lombar pode estar presente. Deficits de mobilidade das regiões torácica, lombopélvica ou quadril. Diminuição de força ou resistência muscular do tronco ou região lombopélvica, com diminuição da coordenação dos movimentos em AVDs (Instabilidade segmentar lombar).</div>
+               
+                <div id="fou10" class="testbutton"  style="margin-top: 15%;">Dor toracolombar, lombalgia e dor irradiada ou parestesias que são reproduzidas no início da segunda metade da amplitude do movimento que pioram ao final do movimento da coluna lombar. Pode estar associada a diminuição da sensibilidade, força muscular e hiporeflexia do membro inferior envolvido.</div>
+            
+               </div>
             
                  <!-- Quinta Instância -->
         <div id="fifth">
@@ -113,9 +237,9 @@
                 Avaliação do Comprometimento Neurodinâmico
             </h3>
             
-            <div id="fif1" class="ui secondary button" style="margin-top: 30%;">Teste de elevação/sustentação da perna estendida, ou testes de tensão neural do membro inferior, ou Slump test, positivos.</div>
+            <div id="fif1" class="testbutton" style="margin-top: 30%;">Teste de elevação/sustentação da perna estendida, ou testes de tensão neural do membro inferior, ou Slump test, positivos.</div>
 
-            <div id="fif2" class="ui secondary button"  style="margin-top: 30%;">Teste de elevação/sustentação da perna estendida, ou Testes de tensão neural do membro inferior, ou Slump Test, negativos.</div>
+            <div id="fif2" class="testbutton"  style="margin-top: 30%;">Teste de elevação/sustentação da perna estendida, ou Testes de tensão neural do membro inferior, ou Slump Test, negativos.</div>
 
             </div>
             
@@ -127,10 +251,10 @@
                    </h3>
             
             
-            <div id="six1" class="ui secondary button" style="margin-top: 30%;">Uma ou mais das seguintes características:
+            <div id="six1" class="testbutton" style="margin-top: 20%;">Uma ou mais das seguintes características:
                    - Aspecto emocional consistente com depressão e duas respostas positivas para Primary Care Evaluation of Mental Disorders screen, comportamento de medo ou ansiedade excessiva e altas pontuações no questionários de medo provocado por crenças, longos períodos de preocupação com o problema, pessimismo ou desamparo e altas pontuações na escala de catastrofização.</div>
         
-            <div id="six2" class="ui secondary button"  style="margin-top: 25%;">Não possui nenhuma das características acima listadas.</div>
+            <div id="six2" class="testbutton"  style="margin-bottom: :25%; margin-top: 10%">Não possui nenhuma das características acima listadas.</div>
              
         </div>
             
@@ -148,7 +272,10 @@
           <div class="description" style="margin-top: 5%;">
       <p id="tratamento"></p>
         </div>
-   <button id="inicio" class="ui center aligned secondary button" style="margin-top: 5%; margin-left: 25%">Voltar ao ínicio</button>  
+   <button id="inicio" class="testbutton" style="margin-top: 5%; margin-left: 25%">Voltar ao ínicio</button>
+       <div class="description" style="margin-top: 5%;">
+      <p>Esse Aplicativo está protegido por patente pelo Nitt.UEPA e INPI.</p>
+        </div>
   </div>
 </div>
         </div>
@@ -157,10 +284,10 @@
             
             <div id="tela">
                 
-             <button id="telafin" class="fluid ui secondary button" style="margin-top: 10%; margin-bottom: 10%">Paciente com lombalgia sem associação de nehuma das caracteristicas listadas abaixo</button>
-                 <button id="urgencia" class="fluid ui secondary button" style="margin-bottom: 10%;">Pacientes que possuam <strong>dor lombar aguda</strong> associada com Red Flag:
+             <button id="telafin" class="testbutton" style="margin-top: 10%; margin-bottom: 10%">Paciente com lombalgia sem associação de nehuma das caracteristicas listadas abaixo</button>
+                 <button id="urgencia" class="testbutton" style="margin-bottom: 10%;">Pacientes que possuam dor lombar aguda associada com Red Flag:
               </button>
-                <button id="ayuda" class="fluid ui  secondary button" style="margin-bottom: 10%;">Red Flags
+                <button id="ayuda" class="testbutton" style="margin-bottom: 10%; width: 100%">Red Flags
                 </button>
             </div>
       
