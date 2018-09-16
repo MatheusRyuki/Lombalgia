@@ -20,7 +20,7 @@
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
     <allow-intent href="market:*" />
-    <icon density="mdpi" src="www/img/logo.png" />
+    <icon density="mdpi" src="www/img/logo.jpg" />
     <preference name="loglevel" value="DEBUG" />
     <preference name="LoadUrlTimeoutValue" value="100000" />
 </widget>

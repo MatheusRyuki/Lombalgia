@@ -18,7 +18,7 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
-        <icon density="mdpi" src="www/img/logo.png" />
+        <icon density="mdpi" src="www/img/logo.jpg" />
         <preference name="LoadUrlTimeoutValue" value="100000" />
     </platform>
     <platform name="ios">
