@@ -53,12 +53,6 @@ var app = {
     receivedEvent: function (id) {
 
 
-        //Função verificar scrollagem
-        $(window).scroll(function () {
-            if ($(window).scrollTop() == $(document).height() - $(window).height()) {
-                $(".arrow bounce").hide();
-            }
-        });
 
         //Apresentação Clique
         $("#pri").click(function () {
