@@ -40,18 +40,13 @@ var app = {
         $("#seventh").hide();
         this.receivedEvent('deviceready');
         $(document.body).css({
-            "background": "url(img/lombalgia.png) no-repeat center center fixed",
-            "background-size": "cover",
-            "height": "100%"
+            "background-color": "#e2dbcc"
         });
-
-
-
+        
     },
 
     // Update DOM on a Received Event
     receivedEvent: function (id) {
-
 
 
         //Apresentação Clique
@@ -59,6 +54,7 @@ var app = {
             $("#first").fadeOut();
             $("#tela").fadeIn();
             $(".arrow bounce").fadeIn();
+            loaded();
         });
 
         //Verificar RedFlag
@@ -479,12 +475,12 @@ var app = {
         //Mensagem de erro
         function erro() {
             if (localStorage.getItem('primeiraEscolha') == 1 || localStorage.getItem('primeiraEscolha') == 2) {
-                $("#diagnostico").html("<strong>Informações inconsistentes!</strong>");
-                $("#tratamento").html("Primeiramente: Aconselhamentos, segurança, autocuidado, retorno ao trabalho e encorajar a prática de atividade física (Reavaliar em duas semanas). \nSecundariamente: Calor superficial, massoterapia, manipulação vertebral e acupuntura.");
+                $("#diagnostico").html("<strong>Informações inconsistentes!</strong><br>Reavalie as condições de mobilidade e o envolvimento neurológico, se o diagnóstico persistir, considerar a possibilidade de uma lombalgia inespecífica e, neste caso, seguir as orientações de para o tratamento abaixo.");
+                $("#tratamento").html("Primeiramente: Aconselhamentos, segurança, autocuidado, retorno ao trabalho e encorajar a prática de atividade física (Reavaliar em duas semanas). <br>Secundariamente: Calor superficial, massoterapia, manipulação vertebral e acupuntura.");
                 $("#setaIcon").hide();
             } else if (localStorage.getItem('primeiraEscolha') == 3) {
-                $("#diagnostico").html("<strong>Informações inconsistentes!</strong>");
-                $("#tratamento").html("Primeiramente: Aconselhamentos, segurança, autocuidado, retorno ao trabalho e encorajar a prática de atividade física (Reavaliar em duas semanas). \nSecundariamente:  Massoterapia, manipulação vertebral, exercícios em grupo.");
+                $("#diagnostico").html("<strong>Informações inconsistentes!</strong><br>Reavalie as condições de mobilidade e o envolvimento neurológico, se o diagnóstico persistir, considerar a possibilidade de uma lombalgia inespecífica e, neste caso, seguir as orientações de para o tratamento abaixo.");
+                $("#tratamento").html("Primeiramente: Aconselhamentos, segurança, autocuidado, retorno ao trabalho e encorajar a prática de atividade física (Reavaliar em duas semanas). <br>Secundariamente:  Massoterapia, manipulação vertebral, exercícios em grupo.");
                 $("#setaIcon").hide();
             }
         }

@@ -7,9 +7,9 @@
     to you under the Apache License, Version 2.0 (the
     "License"); you may not use this file except in compliance
     with the License.  You may obtain a copy of the License at
-    
+
     http://www.apache.org/licenses/LICENSE-2.0
-    
+
     Unless required by applicable law or agreed to in writing,
     software distributed under the License is distributed on an
     "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -31,21 +31,16 @@
     -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
     <meta charset="UTF-8">
-    <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
     <link rel="stylesheet" type="text/css" href="css/semantic-ui.css">
     <style>
+
         #geral {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            flex-wrap: wrap;
+            max-height: 500px;
             text-align: justify;
         }
-        
-        
+
         .testbutton{
             -moz-box-shadow: 0px 10px 14px -7px #276873;
             -webkit-box-shadow: 0px 10px 14px -7px #276873;
@@ -70,7 +65,7 @@
             text-decoration:none;
             text-shadow:0px 1px 0px #3d768a;
         }
-        
+
         .testbutton:hover {
             background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0f0f0f), color-stop(1, #0f0f0f));
             background:-moz-linear-gradient(top, #0f0f0f 5%, #0f0f0f 100%);
@@ -85,8 +80,12 @@
             position:relative;
             top:1px;
         }
-       
-        
+
+        #first {
+            margin-top: 25%;
+        }
+
+
     </style>
 
     <title>Hello World</title>
@@ -100,15 +99,28 @@
 
         <!-- Primeira Instância -->
         <div id="first" class="ui segment">
-            <div class="ui basic segment">
-                <img class="ui mini avatar image" src="img/brasaouepa.png">
-                <img class="ui mini avatar right floated image" src="img/UFPA.png">
-            </div>
-
             <img class="ui centered small image" src="img/logo.png">
             <h1 class="ui center aligned header">LBP Screening</h1>
-            <button id="pri" class="ui primary button" style="margin-left: 30%">Comece aqui!</button>
-            <button id="sobre" class="ui secondary button" style="margin-left: 25%; margin-top: 5%">Sobre o Aplicativo</button>
+            <div class="ui centered grid">
+              <div class="three column row">
+                <div class="column"></div>
+                <div class="column"><button id="pri" class="ui primary button">Comece aqui!</button></div>
+                <div class="column"></div>
+              </div>
+            </div>
+            <div class="ui centered grid">
+              <div class="centered row">
+                <div class="three wide column">
+                  <img style="margin-top: 10%;"class="ui mini avatar image" src="img/brasaouepa.png">
+                </div>
+                <div class="ten wide column">
+                  <button style="margin-left:8%;" id="sobre" class="ui secondary button">Sobre o Aplicativo</button>
+                </div>
+                <div class="three wide column">
+                    <img class="ui mini avatar image" src="img/UFPA.png">
+                </div>
+              </div>
+            </div>
         </div>
 
         <!-- Segunda Instância -->
@@ -131,7 +143,7 @@
             <h3 class="ui top attached center aligned header" style="margin-top: 5%;">
                 Caracterização da Dor
             </h3>
-            
+
             <div id="thi1" class="testbutton" style="margin-top: 15%;">Dor na região lombar, e/ou nas nádegas e/ou
                 coxa, com distribuição unilateral. O surgimento dos sintomas está associado a um movimento abrupto
                 descuidado ou a um mal posicionamento mantido.</div>
@@ -180,7 +192,7 @@
             <h3 class="ui top attached center aligned header" style="margin-top: 5%;">
                 Caracterização da Mobilidade
             </h3>
-         
+
             <div id="fou1" class="testbutton" style="margin-top: 10%;">Região da coluna torácica, ou lombar, ou
                 sacroilíaca, com restrições segmentares de movimento. Apresenta reprodução de sintomas dolorosos aos
                 testes provocativos de mobilidade da coluna torácica baixa, lombar ou sacroilíaca.</div>
@@ -207,7 +219,7 @@
             <h3 class="ui top attached center aligned header" style="margin-top: 5%;">
                 Caracterização da Mobilidade
             </h3>
-            
+
             <div id="fou5" class="testbutton" style="margin-top: 15%;">Os Sintomas são reproduzidos no final dos
                 movimentos da coluna vertebral. Testes provocativos reproduzem sintomas nas regiões torácica baixa,
                 lombar ou sacroilíaca quando envolvidas. Presença de um ou mais dos seguintes sinais: restrição de
@@ -236,7 +248,7 @@
                 Caracterização da Mobilidade
             </h3>
 
-            
+
             <div id="fou8" class="testbutton" style="margin-top: 15%;">Presença de um ou mais dos achados a seguir:
                 Lombalgia ou lombalgia com dor referida em membro inferior que piora na amplitude final sustentada do
                 movi
@@ -293,7 +305,7 @@
         <!-- Sétima Instância -->
         <div id="seventh">
 
-            <div class="ui centered card" style="margin-top: 30%;">
+            <div class="ui centered card" style="margin-top: 15%;">
                 <div class="content">
                     <div class="header" id="resultado"></div>
                     <div class="meta" style="margin-top: 5%;">Diagnóstico</div>
@@ -319,7 +331,7 @@
             <button id="telafin" class="testbutton" style="margin-top: 10%; margin-bottom: 10%">Paciente com lombalgia
                 sem associação de nehuma das caracteristicas listadas abaixo</button>
             <button id="urgencia" class="testbutton" style="margin-bottom: 10%;">Pacientes que possuam dor lombar aguda
-                associada com Red Flag:
+                associada com Red Flags:
             </button>
             <button id="ayuda" class="testbutton" style="margin-bottom: 10%; width: 100%">Red Flags
             </button>
@@ -406,6 +418,7 @@
     <script type="text/javascript" src="js/semantic-ui.js"></script>
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/iscroll.js"></script>
 </body>
 
 </html>
