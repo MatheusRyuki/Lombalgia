@@ -42,19 +42,24 @@ var app = {
         $(document.body).css({
             "background-color": "#e2dbcc"
         });
-        
+
     },
 
     // Update DOM on a Received Event
     receivedEvent: function (id) {
+      //Evento para esconder a seta
+      window.onscroll = function() {
+          if ((window.innerHeight + Math.ceil(window.pageYOffset)) >= document.body.offsetHeight) {
+              $(".arrow").hide();
+          }
+      };
+
 
 
         //Apresentação Clique
         $("#pri").click(function () {
             $("#first").fadeOut();
             $("#tela").fadeIn();
-            $(".arrow bounce").fadeIn();
-            loaded();
         });
 
         //Verificar RedFlag
@@ -110,6 +115,7 @@ var app = {
             $("#third").fadeOut();
             localStorage.segundaEscolha = 1;
             $("#fourth").fadeIn();
+            $(".arrow").show();
             localStorage.flag = true;
         });
 
@@ -118,6 +124,7 @@ var app = {
             $("#third").fadeOut();
             localStorage.segundaEscolha = 2;
             $("#fourth").fadeIn();
+            $(".arrow").show();
             localStorage.flag = true;
         });
 
@@ -126,6 +133,7 @@ var app = {
             $("#third").fadeOut();
             localStorage.segundaEscolha = 3;
             $("#fourth").fadeIn();
+            $(".arrow").show();
             localStorage.flag = true;
         });
 
@@ -134,6 +142,7 @@ var app = {
             $("#third").fadeOut();
             localStorage.segundaEscolha = 4;
             $("#fourth").fadeIn();
+            $(".arrow").show();
             localStorage.flag = true;
         });
 
@@ -142,6 +151,7 @@ var app = {
             $("#thirdsec").fadeOut();
             localStorage.segundaEscolha = 1;
             $("#fourthsec").fadeIn();
+            $(".arrow").show();
             localStorage.flag = true;
         });
 
@@ -150,6 +160,7 @@ var app = {
             $("#thirdsec").fadeOut();
             localStorage.segundaEscolha = 2;
             $("#fourthsec").fadeIn();
+            $(".arrow").show();
             localStorage.flag = true;
         });
 
@@ -158,6 +169,7 @@ var app = {
             $("#thirdsec").fadeOut();
             localStorage.segundaEscolha = 3;
             $("#fourthsec").fadeIn();
+            $(".arrow").show();
             localStorage.flag = true;
         });
 
@@ -166,6 +178,7 @@ var app = {
             $("#thirdthi").fadeOut();
             localStorage.segundaEscolha = 1;
             $("#fourththi").fadeIn();
+            $(".arrow").show();
             localStorage.flag = true;
         });
 
@@ -174,6 +187,7 @@ var app = {
             $("#thirdthi").fadeOut();
             localStorage.segundaEscolha = 2;
             $("#fourththi").fadeIn();
+            $(".arrow").show();
             localStorage.flag = true;
         });
 
@@ -182,6 +196,7 @@ var app = {
             $("#thirdthi").fadeOut();
             localStorage.segundaEscolha = 3;
             $("#fourththi").fadeIn();
+            $(".arrow").show();
             localStorage.flag = true;
         });
 
@@ -327,7 +342,7 @@ var app = {
                             }
                         }
                     }
-                    //Desfecho 3            
+                    //Desfecho 3
                 } else if (localStorage.getItem('segundaEscolha') == 3) {
                     if (localStorage.getItem('terceiraEscolha') == 3) {
                         if (localStorage.getItem('quartaEscolha') == 2) {

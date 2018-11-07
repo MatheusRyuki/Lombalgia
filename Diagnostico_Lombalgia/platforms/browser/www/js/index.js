@@ -42,26 +42,24 @@ var app = {
         $(document.body).css({
             "background-color": "#e2dbcc"
         });
-        
+
     },
 
     // Update DOM on a Received Event
     receivedEvent: function (id) {
-        var myScroll;
-        function loaded() {
-            myScroll = new IScroll('#geral', {
-                mouseWheel: true,
-                scrollbars: true
-            });
+        //Evento de apagar a seta
+      $(".arrow").bind("scroll", function() {
+        if ($(this).scrollTop() >= $(this)[0].scrollY) {
+          $(".arrow").hide();
         }
+      });
+
 
 
         //Apresentação Clique
         $("#pri").click(function () {
             $("#first").fadeOut();
             $("#tela").fadeIn();
-            $(".arrow bounce").fadeIn();
-            loaded();
         });
 
         //Verificar RedFlag
@@ -334,7 +332,7 @@ var app = {
                             }
                         }
                     }
-                    //Desfecho 3            
+                    //Desfecho 3
                 } else if (localStorage.getItem('segundaEscolha') == 3) {
                     if (localStorage.getItem('terceiraEscolha') == 3) {
                         if (localStorage.getItem('quartaEscolha') == 2) {
