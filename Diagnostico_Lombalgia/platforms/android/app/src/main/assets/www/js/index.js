@@ -94,6 +94,7 @@ var app = {
             $("#second").fadeOut();
             localStorage.primeiraEscolha = 1;
             $("#third").fadeIn();
+            $(".arrow").show();
         });
 
         //Segundo Clique - Opções 2
@@ -101,6 +102,7 @@ var app = {
             $("#second").fadeOut();
             localStorage.primeiraEscolha = 2;
             $("#thirdsec").fadeIn();
+            $(".arrow").show();
         });
 
         //Segundo Clique - Opções 3
@@ -108,6 +110,7 @@ var app = {
             $("#second").fadeOut();
             localStorage.primeiraEscolha = 3;
             $("#thirdthi").fadeIn();
+            $(".arrow").show();
         });
 
         //Terceiro Clique - Opções 1
