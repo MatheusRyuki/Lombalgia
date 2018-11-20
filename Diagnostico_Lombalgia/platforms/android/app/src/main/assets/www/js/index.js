@@ -493,11 +493,11 @@ var app = {
         //Mensagem de erro
         function erro() {
             if (localStorage.getItem('primeiraEscolha') == 1 || localStorage.getItem('primeiraEscolha') == 2) {
-                $("#diagnostico").html("<strong>Informações inconsistentes!</strong><br>Reavalie as condições de mobilidade e o envolvimento neurológico, se o diagnóstico persistir, considerar a possibilidade de uma lombalgia inespecífica e, neste caso, seguir as orientações de para o tratamento abaixo.");
+                $("#diagnostico").html("<strong>Informações inconsistentes!</strong><br>Reavalie as condições de mobilidade e o envolvimento neurológico, se o diagnóstico persistir, considerar a possibilidade de uma lombalgia inespecífica e, neste caso, seguir as orientações para o tratamento abaixo.");
                 $("#tratamento").html("Primeiramente: Aconselhamentos, segurança, autocuidado, retorno ao trabalho e encorajar a prática de atividade física (Reavaliar em duas semanas). <br>Secundariamente: Calor superficial, massoterapia, manipulação vertebral e acupuntura.");
                 $("#setaIcon").hide();
             } else if (localStorage.getItem('primeiraEscolha') == 3) {
-                $("#diagnostico").html("<strong>Informações inconsistentes!</strong><br>Reavalie as condições de mobilidade e o envolvimento neurológico, se o diagnóstico persistir, considerar a possibilidade de uma lombalgia inespecífica e, neste caso, seguir as orientações de para o tratamento abaixo.");
+                $("#diagnostico").html("<strong>Informações inconsistentes!</strong><br>Reavalie as condições de mobilidade e o envolvimento neurológico, se o diagnóstico persistir, considerar a possibilidade de uma lombalgia inespecífica e, neste caso, seguir as orientações para o tratamento abaixo.");
                 $("#tratamento").html("Primeiramente: Aconselhamentos, segurança, autocuidado, retorno ao trabalho e encorajar a prática de atividade física (Reavaliar em duas semanas). <br>Secundariamente:  Massoterapia, manipulação vertebral, exercícios em grupo.");
                 $("#setaIcon").hide();
             }
